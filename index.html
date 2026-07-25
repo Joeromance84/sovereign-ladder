@@ -124,17 +124,35 @@ a{color:var(--pine)}
 }
 
 /* ── downloads ──────────────────────────────────────────── */
-.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
-.doc{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column}
+.primary{
+  border:1px solid var(--ink);background:var(--paper-deep);
+  padding:38px 40px;margin:0 0 12px;
+}
+.primary .kind{
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 16px;
+}
+.primary h3{
+  font-family:var(--serif);font-weight:400;font-size:2.35rem;line-height:1.08;
+  margin:0 0 16px;letter-spacing:-.015em;max-width:20ch;
+}
+.primary p{margin:0 0 26px;font-size:1.02rem;color:var(--steel);max-width:58ch}
+.primary .acts{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.deeper{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--steel);margin:46px 0 18px;
+}
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.doc{background:var(--paper);padding:26px 24px;display:flex;flex-direction:column}
 .doc .kind{
   font-family:var(--mono);font-size:10px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--brass);margin:0 0 14px;
+  text-transform:uppercase;color:var(--brass);margin:0 0 12px;
 }
 .doc h3{
-  font-family:var(--serif);font-weight:400;font-size:1.65rem;line-height:1.15;
-  margin:0 0 12px;letter-spacing:-.01em;
+  font-family:var(--serif);font-weight:400;font-size:1.4rem;line-height:1.15;
+  margin:0 0 10px;letter-spacing:-.01em;
 }
-.doc p{margin:0 0 24px;font-size:.94rem;color:var(--steel);flex:1}
+.doc p{margin:0 0 20px;font-size:.9rem;color:var(--steel);flex:1}
 .doc .grab{
   display:inline-flex;align-items:center;gap:9px;text-decoration:none;
   font-family:var(--mono);font-size:11px;letter-spacing:.09em;
@@ -208,6 +226,8 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
   .railfix{display:none}
   .wrap{padding:0 22px}
   .docs{grid-template-columns:1fr}
+  .primary{padding:28px 24px}
+  .primary h3{font-size:1.85rem}
   .share{grid-template-columns:1fr;gap:36px}
   .qrbox{max-width:240px}
   .hero{padding:11vh 0 7vh}
@@ -254,36 +274,41 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
   <section class="sec" id="documents">
     <div class="sechead">
       <h2>The documents</h2>
-      <span class="tag">Four files · Free to copy, print, share</span>
+      <span class="tag">One that matters · Three that go deeper</span>
     </div>
-    <div class="docs">
+    <div class="primary">
+      <p class="kind">Start here — this is the one that matters</p>
+      <h3>The Three Pillars &amp; The Ladder</h3>
+      <p>The entire framework in one plain-language file: what holds a pattern in place, the seven rungs out, what to do in the next ten minutes, and an honest account of which parts have evidence behind them. Written to be pasted straight into any AI assistant so it can walk through it with you. If you only take one thing from this page, take this.</p>
+      <div class="acts">
+        <a class="btn solid" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span style="opacity:.7">MD · 14 KB</span></a>
+        <button class="btn" id="copyPrimer2" type="button">Copy to clipboard</button>
+      </div>
+    </div>
 
-      <article class="doc">
-        <p class="kind">Start here — for anyone</p>
-        <h3>The Three Pillars &amp; The Ladder</h3>
-        <p>The whole framework in one plain-language file: the three structures that hold a pattern in place, the seven rungs out, and what to do in the next ten minutes. Written to be pasted straight into any AI assistant so it can walk with you.</p>
-        <a class="grab" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span class="meta">MD · 13 KB</span></a>
-      </article>
+    <p class="deeper">The rest is optional depth — not needed to begin</p>
+
+    <div class="docs">
 
       <article class="doc">
         <p class="kind">The full map</p>
         <h3>Sovereign Ladder Protocol v4</h3>
-        <p>The complete adaptive system: five-dimension intake, gap analysis, five pathway types, the Unified Sovereign Score, and the mandatory safety overrides. Ends with a printable client worksheet.</p>
+        <p>The elaborated system: five-dimension intake, gap analysis, five pathway types, composite scoring, safety overrides, printable worksheet. Its scoring weights are reasoned, not measured — treat them as provisional.</p>
         <a class="grab" href="assets/sovereign-ladder-protocol-v4.pdf" download>Download &darr; <span class="meta">PDF · 74 KB</span></a>
       </article>
 
       <article class="doc">
         <p class="kind">The theory</p>
-        <h3>Master Geometry of Addiction Sovereignty</h3>
-        <p>Why the pattern holds: the missing-mechanism principle, the three diagnostic dimensions, and the seven rungs read through what was absent rather than what went wrong.</p>
+        <h3>Master Geometry</h3>
+        <p>Why the pattern holds: the missing-mechanism principle and the three diagnostic dimensions. Contains mathematical notation — read it as metaphor, not computation. Nothing is calculated, and skipping it costs you nothing.</p>
         <a class="grab" href="assets/master-geometry-of-addiction-sovereignty.pdf" download>Download &darr; <span class="meta">PDF · 49 KB</span></a>
       </article>
 
       <article class="doc">
         <p class="kind">For builders</p>
         <h3>PSP-1 Protocol Spec</h3>
-        <p>The machine-readable version. Eight hard rules, a six-step loop, and a conformance test — so anyone building a tool on this framework can be audited against it instead of trusted on faith.</p>
-        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 5 KB</span></a>
+        <p>The machine-readable version. Eight hard rules, a six-step loop, a conformance test, and a stated evidentiary status — so anyone building on this can be audited against it rather than trusted on faith.</p>
+        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 6 KB</span></a>
       </article>
 
     </div>
@@ -438,8 +463,9 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
     steps.forEach(function(s){ io.observe(s); });
   }
 
-  var btn = document.getElementById('copyPrimer');
-  if(btn){
+  var btns = [document.getElementById('copyPrimer'), document.getElementById('copyPrimer2')];
+  btns.forEach(function(btn){
+    if(!btn) return;
     btn.addEventListener('click', function(){
       var label = btn.textContent;
       fetch('assets/three-pillars-ai-primer.md')
@@ -454,7 +480,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
           setTimeout(function(){ btn.textContent = label; }, 3200);
         });
     });
-  }
+  });
 })();
 </script>
 </body>

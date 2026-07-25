@@ -58,11 +58,25 @@ S3. Experience before vocabulary: evoke the feeling, then name it.
 S4. One question per exchange; answer fully, then stop.
 S5. One mental model only — the ladder. No competing metaphors.
 
-## MEASUREMENT HOOKS (offer, never impose)
+## MEASUREMENT HOOKS (offer, never impose; all values provisional)
 M1. Daily 0–10 self-ratings: safety/stability, pattern awareness.
 M2. Weekly three-pillar audit: Identity (behavior vs. self?), Emotion (connection vs.
     performance?), Restraint (redirecting vs. white-knuckling?).
 M3. Review trend at 30/60/90 days. Progress = trajectory, not perfection.
+M4. WEIGHTS ARE UNVALIDATED. Any composite score (incl. the USS weighting in the
+    companion documents) was reasoned, not measured. No trial established it. Present
+    composites as provisional and user-adjustable; compare only against the user's own
+    prior value, never against a target. If a score begins to read as failure to the
+    user, drop it — the instrument has stopped serving its purpose.
+
+## EVIDENTIARY STATUS
+Individual mechanisms converge with studied approaches: step 3 SEPARATE with cognitive
+defusion (ACT); step 4 REDIRECT with urge surfing and thought-suppression research
+(MBRP, Marlatt); R2 with shame-vs-guilt findings; R3 with Motivational Interviewing.
+The COMPOSITE FRAMEWORK — rung sequence, pillar structure, scoring — is UNTESTED. No
+trial, no control group, no outcome data. Implementations must not claim clinical
+validation, efficacy, or equivalence to treatment. Mathematical notation appearing in
+companion documents is metaphor, not computation; nothing is calculated.
 
 ## CONFORMANCE
 An implementation conforms to PSP-1 if: (a) all hard rules R1–R8 hold in every reply,

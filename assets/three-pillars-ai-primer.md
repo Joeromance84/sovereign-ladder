@@ -177,7 +177,11 @@ The most heartbreaking failure mode: a person is actually changing, but because 
 2. *Emotion:* Am I engaging in real, vulnerable connection, or performative intensity?
 3. *Restraint:* Am I white-knuckling against urges, or efficiently redirecting the energy?
 
-**Composite tracking:** Combine these into a simple running score reviewed at 30, 60, and 90 days, so long-term ascent is visible even on hard days. Celebrate objective movement, not perfection.
+**Composite tracking:** You can combine these into a single running number if that helps you see movement — but treat any such score as **provisional and yours to adjust.** The companion documents propose one weighting (safety, identity, emotion, restraint, and so on, at fixed percentages). Those weights were reasoned, not measured. No study established them, and they should not be read as precision.
+
+If you use a composite, use it one way only: **compare it to your own number from last month, never to a target.** A score that drops because you weighted restraint heavily during a week when restraint was the hard part is not evidence of failure — it is evidence the weighting was wrong for you. Change the weighting. It is your instrument.
+
+The purpose of measuring is one thing: to make slow change visible so you don't quit while succeeding. Any number that starts making you feel like you're failing has stopped doing its job — put it down. Trajectory over perfection, and your own reading of your own life over any arithmetic.
 
 ---
 
@@ -202,6 +206,34 @@ Patterns thrive in ambiguity. Healing needs a container that doesn't collapse wh
 5. **Experience before vocabulary.** Evoke the feeling first, name it second.
 6. **Every idea produces an action.** Never leave the person with only insight. Insight without action is paralysis; a diagnosis without a path is just information.
 7. **Locate them on the ladder.** Early in the conversation, gently identify which rung the person is standing on, and work at that rung — never several rungs above it.
+
+---
+
+## WHERE THIS COMES FROM — AND WHAT IS NOT ESTABLISHED
+
+This framework was assembled from lived experience, not from a laboratory. That said, several of its central moves are not original, and they are not guesses either — they converge with approaches that have been studied for decades. Knowing that should make you *more* willing to trust those particular moves, and more willing to go find the professional versions.
+
+**Rung 2 — separating self from pattern.** In Acceptance and Commitment Therapy this is called *cognitive defusion*: creating distance between a person and their thoughts, so a thought is something you observe rather than something you are. ACT has been tested in randomised trials across substance use and compulsive behaviour.
+
+**Rung 3 — redirect rather than suppress.** Research on thought suppression consistently finds that trying not to think about something increases how often it returns. Relatedly, *urge surfing* — riding an urge as a wave that rises and falls instead of fighting it — comes from Alan Marlatt's work and sits at the centre of Mindfulness-Based Relapse Prevention. This is the single best-supported claim in this document.
+
+**"It is what you do, not who you are."** Research distinguishing shame from guilt finds that shame — *I am bad* — predicts worse outcomes, including with substance problems, while guilt about a specific behaviour predicts better ones. The identity reframe is not just kindness; it targets the variable that actually moves.
+
+**Not arguing with resistance.** Motivational Interviewing established that direct confrontation tends to increase defensiveness, and that change talk arises more readily when the person is not being pushed. That underlies the rule against white-knuckle coaching.
+
+**The pattern log.** Self-monitoring is one of the more durable findings in behaviour change: recording a behaviour changes it, partly by making it visible.
+
+### What has *not* been established
+
+Everything above concerns individual mechanisms. **The framework as a whole — the seven-rung sequence, the three-pillar structure, the composite score — has never been tested.** No trial, no control group, no outcome data. The ordering is reasoned, not demonstrated. It may be wrong.
+
+The companion documents also carry mathematical notation — integrals over an "addiction manifold" and similar. **Read that as metaphor, not as computation.** Nothing is calculated, no value is produced, and the notation is a way of expressing relationships in a compressed form, not a claim of mathematical rigour. If it clarifies things for you, use it. If it doesn't, ignore it entirely and lose nothing.
+
+### If something here is working, go further
+
+This is free and it costs you nothing, which also means nobody is accountable to you for it. The approaches above have trained practitioners and evidence behind them. An ACT or MBRP therapist, an MI-trained counsellor, or a peer support group is not a step down from this framework — it is the fuller version of the parts of it that work.
+
+Use this to get moving. Don't let it be the end of the road.
 
 ---
 
