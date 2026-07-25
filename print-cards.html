@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print sheet — Sovereign Ladder cards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Literata:opsz,wght@7..72,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16202B; --steel:#5A6B76; --rule:#C2C9C1; --pine:#2F5D50;
+  --serif:"Instrument Serif",Georgia,serif;
+  --body:"Literata",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#EDEFEA;color:var(--ink);font-family:var(--body)}
+
+.howto{
+  max-width:760px;margin:0 auto;padding:44px 26px 30px;
+}
+.howto h1{font-family:var(--serif);font-weight:400;font-size:2.2rem;margin:0 0 14px}
+.howto p{font-size:.95rem;color:var(--steel);line-height:1.6;margin:0 0 12px}
+.howto ul{font-size:.95rem;color:var(--steel);line-height:1.6;padding-left:1.2em}
+.howto li{margin-bottom:8px}
+.howto b{color:var(--ink)}
+.printbtn{
+  display:inline-block;margin:18px 0 0;padding:13px 24px;border:1px solid var(--pine);
+  background:var(--pine);color:#fff;font-family:var(--mono);font-size:12px;
+  letter-spacing:.09em;text-transform:uppercase;cursor:pointer;
+}
+
+/* ── the sheet: 8 cards, US Letter, 3.5in x 2in each ── */
+.sheet{
+  width:8.5in;margin:26px auto 60px;padding:0.5in;background:#fff;
+  display:grid;grid-template-columns:3.5in 3.5in;grid-auto-rows:2in;
+  gap:0.16in 0.5in;box-shadow:0 2px 18px rgba(0,0,0,.12);
+}
+.card{
+  border:1px dashed var(--rule);
+  padding:0.17in 0.19in;display:flex;gap:0.16in;align-items:center;
+  break-inside:avoid;page-break-inside:avoid;overflow:hidden;
+}
+.card .qr{width:1.35in;height:1.35in;flex:none}
+.card .qr img{width:100%;height:100%;display:block}
+.card .txt{flex:1;min-width:0}
+.card .line{
+  font-family:var(--serif);font-weight:400;font-size:13.5pt;line-height:1.14;
+  margin:0 0 .07in;letter-spacing:-.01em;
+}
+.card .sub{
+  font-size:7.6pt;line-height:1.34;color:var(--steel);margin:0 0 .09in;
+}
+.card .url{
+  font-family:var(--mono);font-size:6.4pt;letter-spacing:.02em;
+  color:var(--pine);margin:0;word-break:break-all;
+}
+
+@media print{
+  @page{size:letter;margin:0}
+  body{background:#fff}
+  .howto{display:none}
+  .sheet{
+    width:8.5in;height:11in;margin:0;padding:0.5in;
+    box-shadow:none;page-break-after:always;
+  }
+  .card{border:1px dashed #d8ddd7}
+  .card .url{color:#2F5D50}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<div class="howto">
+  <h1>Print sheet — 8 cards per page</h1>
+  <p>Eight cards at standard business-card size (3.5&Prime; &times; 2&Prime;) on US Letter. The QR is the vector file from this repository — nothing is fetched from any outside server, so these cards work forever and leak nothing.</p>
+  <ul>
+    <li><b>Home printing:</b> hit print, choose <b>Actual size</b> (not "fit to page"), then cut along the dashed guides.</li>
+    <li><b>Print shop:</b> don't send them this page. Send them <b>assets/qr-code.svg</b> — a vector file is what they actually want, and it stays sharp at any size.</li>
+    <li><b>Card stock</b> beats paper. 65&ndash;110 lb. Cards get carried; paper gets thrown away.</li>
+    <li><b>Scan one before you cut the rest.</b></li>
+  </ul>
+  <button class="printbtn" onclick="window.print()">Print these cards</button>
+</div>
+
+<div class="sheet">
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="qr"><img src="assets/qr-code.svg" alt="QR code"></div>
+    <div class="txt">
+      <p class="line">You are not fighting willpower. You are running a pattern.</p>
+      <p class="sub">Patterns can be understood. What can be understood can be changed. Free — no signup, no tracking.</p>
+      <p class="url">joeromance84.github.io/sovereign-ladder</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
