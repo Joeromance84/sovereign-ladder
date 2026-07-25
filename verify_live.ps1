@@ -1,25 +1,23 @@
-$gh = 'C:\Program Files\GitHub CLI\gh.exe'
+$b = 'https://joeromance84.github.io/sovereign-ladder/'
 
-Write-Output '=== ACCOUNT ==='
-$u = & $gh api user | ConvertFrom-Json
-Write-Output ("  login        : " + $u.login)
-Write-Output ("  id           : " + $u.id)
-Write-Output ("  public repos : " + $u.public_repos)
-Write-Output ("  created      : " + $u.created_at)
-
-Write-Output ''
-Write-Output '=== PUBLIC REPOS (these URLs would all move) ==='
-$repos = & $gh api "users/Joeromance84/repos?per_page=100&type=owner" | ConvertFrom-Json
-$pub = $repos | Where-Object { -not $_.private }
-Write-Output ("  count: " + $pub.Count)
-$pub | Select-Object -First 25 | ForEach-Object {
-    $pages = if ($_.has_pages) { "  <-- HAS PAGES SITE" } else { "" }
-    Write-Output ("  " + $_.name + $pages)
+Write-Output 'Waiting for Pages rebuild...'
+for ($i = 1; $i -le 20; $i++) {
+    try {
+        $c = (Invoke-WebRequest -Uri $b -UseBasicParsing -TimeoutSec 20).Content
+        if ($c -match 'id="how"') { break }
+    } catch { }
+    Start-Sleep -Seconds 15
 }
 
+$c = (Invoke-WebRequest -Uri $b -UseBasicParsing -TimeoutSec 25).Content
 Write-Output ''
-Write-Output '=== ORGS ALREADY OWNED ==='
-$orgs = & $gh api user/orgs | ConvertFrom-Json
-if ($orgs.Count -eq 0) { Write-Output '  none' }
-else { $orgs | ForEach-Object { Write-Output ("  " + $_.login) } }
-Write-Output '--- COMPLETE ---'
+Write-Output '=== LIVE CONTENT CHECK ==='
+Write-Output ("  how-to-use section    : " + ($c -match 'id="how"'))
+Write-Output ("  AI storage warning    : " + ($c -match "company's servers"))
+Write-Output ("  disclosure guidance   : " + ($c -match 'never have to narrate your life'))
+Write-Output ("  R8 boundary           : " + ($c -match 'stand in for human connection'))
+Write-Output ("  Rung 0 when activated : " + ($c -match 'ground you, not analyze you'))
+Write-Output ("  crisis line 988       : " + ($c -match '988'))
+Write-Output ("  no false 'no data'    : " + (-not ($c -match 'No data stored')))
+Write-Output ("  page size             : " + $c.Length + " bytes")
+Write-Output '--- LIVE VERIFY COMPLETE ---'
