@@ -203,6 +203,19 @@ a{color:var(--pine)}
 .warn p:last-child{margin-bottom:0}
 .warn strong{color:var(--ink);font-weight:600}
 
+/* ── the seam ───────────────────────────────────────────── */
+.seam{
+  border:1px solid var(--rule);border-left:3px solid var(--brass);
+  background:var(--paper-deep);padding:26px 30px;margin:12px 0 24px;
+}
+.seamlabel{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 14px;
+}
+.seam p{margin:0 0 12px;font-size:.95rem;color:var(--steel);max-width:64ch}
+.seam p:last-child{margin-bottom:0}
+.seam strong{color:var(--ink);font-weight:600}
+
 /* ── share / QR ─────────────────────────────────────────── */
 .share{display:grid;grid-template-columns:1fr 240px;gap:52px;align-items:start}
 .share ol{margin:0;padding-left:1.2em;color:var(--steel)}
@@ -281,7 +294,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
       <h3>The Three Pillars &amp; The Ladder</h3>
       <p>The entire framework in one plain-language file: what holds a pattern in place, the seven rungs out, what to do in the next ten minutes, and an honest account of which parts have evidence behind them. Written to be pasted straight into any AI assistant so it can walk through it with you. If you only take one thing from this page, take this.</p>
       <div class="acts">
-        <a class="btn solid" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span style="opacity:.7">MD · 17 KB</span></a>
+        <a class="btn solid" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span style="opacity:.7">MD · 19 KB</span></a>
         <button class="btn" id="copyPrimer2" type="button">Copy to clipboard</button>
       </div>
     </div>
@@ -308,7 +321,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
         <p class="kind">For builders</p>
         <h3>PSP-1 Protocol Spec</h3>
         <p>The machine-readable version. Eight hard rules, a six-step loop, a conformance test, and a stated evidentiary status — so anyone building on this can be audited against it rather than trusted on faith.</p>
-        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 6 KB</span></a>
+        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 7 KB</span></a>
       </article>
 
     </div>
@@ -391,6 +404,13 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
         <p class="move"><b>Move</b>Move the urge into motion, water, breath, making something. Redirect — don't white-knuckle.</p>
       </div>
     </div>
+    <div class="seam">
+      <p class="seamlabel">The seam — the work changes here</p>
+      <p><strong>Rungs 0–3 are acute.</strong> You do them while the pattern is firing. The urge supplies the momentum and every step has an obvious move. You're responding — you never have to work out where you are.</p>
+      <p><strong>Rungs 4–6 are cold.</strong> You do them on an ordinary day when nothing is happening. Nothing pushes you forward, so you have to generate the direction yourself, and that means stopping to take stock.</p>
+      <p><strong>Stopping at rung 3 is a complete intervention, not an abandoned climb.</strong> You named it, stepped out of it, moved the energy. That's the whole job for that moment. Don't try to design new structures mid-surge — that's the Rung 0 error arriving from the other end. And if the flow goes dead around rung 4: the tool changed modes. You didn't fail.</p>
+    </div>
+
     <div class="step" data-step="4">
       <div class="num">04</div>
       <div>

@@ -103,7 +103,7 @@ Stages of restraint work:
 
 ## PART TWO: THE LADDER (SEVEN RUNGS, 0–6)
 
-The path out, in order. Do not skip rungs. Someone who feels unsafe cannot observe themselves objectively — safety always precedes insight.
+The path out, in order — but not all in one sitting. Do not skip rungs going up: someone who feels unsafe cannot observe themselves objectively, and safety always precedes insight. You are not obliged to reach the top. Most uses of this ladder end at rung 3, and that is the design working, not the design failing. See **The Seam** below the table.
 
 | Rung | Name | The Question It Answers | The Move |
 |------|------|------------------------|----------|
@@ -114,6 +114,28 @@ The path out, in order. Do not skip rungs. Someone who feels unsafe cannot obser
 | **4** | **Construction** | What replaces the old pattern? | Build new routines, real relationships, structural boundaries |
 | **5** | **Integration** | Who am I becoming? | Rewrite the personal narrative — the past becomes wisdom, not secret shame |
 | **6** | **Sovereignty** | What does freedom feel like? | Triggers may still occur, but they no longer command action; the self is the origin again |
+
+---
+
+### THE SEAM — READ THIS BEFORE YOU CLIMB PAST RUNG 3
+
+**The ladder is two different kinds of work, and there is a seam between rung 3 and rung 4.**
+
+**Rungs 0–3 are acute.** You do them *while the pattern is firing.* The urge supplies the momentum, every step has an obvious trigger — *this is happening now* — and an obvious move. You are responding. You do not have to decide anything or figure out where you are. You work from what is directly in front of you.
+
+**Rungs 4–6 are cold.** You do them on an ordinary day when nothing is happening. Nothing is pushing you forward, so *you* have to generate the direction: what to build, who you're becoming, where you stand. That requires stopping and taking stock of yourself.
+
+Those are not the same activity, and they do not follow each other naturally in one sitting.
+
+**Three things follow from that:**
+
+1. **Stopping at rung 3 is a complete intervention, not an abandoned climb.** You named the pattern, you stepped out of it, you moved the energy somewhere real. That is the whole job for that moment. Nothing is unfinished.
+
+2. **Do not attempt rungs 4–6 in the middle of a surge.** You have just done hard acute work and you are tired. Asking yourself to assess your position and design new structures right then is asking yourself to plan while flooded — the same error Rung 0 exists to prevent, arriving at the other end of the ladder.
+
+3. **If you get to rung 4 and the flow goes dead, the tool changed modes — you did not fail.** That deadness is the seam. It is a design feature you have just noticed, not evidence about you.
+
+Come back to 4–6 another day, in daylight, when you are steady and curious rather than activated. They will still be there.
 
 ### The Anchor Sentences (one per stage of the climb)
 
