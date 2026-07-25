@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sovereign Ladder — free framework for recurring patterns</title>
+<meta name="description" content="A free, open framework for understanding and changing recurring compulsive patterns. Four documents, no signup, no tracking.">
+<meta name="author" content="Logan Royce Lorentz">
+<meta property="og:title" content="The Sovereign Ladder">
+<meta property="og:description" content="You're probably not fighting a lack of willpower. You're experiencing a learned pattern. Four free documents.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDEFEA;
+  --paper-deep:#E3E7E0;
+  --ink:#16202B;
+  --steel:#5A6B76;
+  --rule:#CBD2CA;
+  --pine:#2F5D50;
+  --brass:#A8823C;
+  --serif:"Instrument Serif",Georgia,serif;
+  --body:"Literata",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --rail:88px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.65;
+  font-optical-sizing:auto;
+}
+::selection{background:var(--brass);color:var(--paper)}
+a{color:var(--pine)}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px 0 calc(28px + var(--rail))}
+.eyebrow{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--steel);margin:0 0 22px;
+}
+
+/* ── SIGNATURE: the ladder rail ─────────────────────────── */
+.railfix{
+  position:fixed;left:0;top:0;bottom:0;width:var(--rail);
+  z-index:20;pointer-events:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.railfix::before{
+  content:"";position:absolute;top:12vh;bottom:12vh;left:50%;
+  width:1px;background:var(--rule);
+}
+.rungs{list-style:none;margin:0;padding:0;position:relative}
+.rungs li{
+  position:relative;height:34px;display:flex;align-items:center;
+  justify-content:center;
+}
+.rungs li::before{
+  content:"";position:absolute;left:50%;transform:translateX(-50%);
+  width:15px;height:1px;background:var(--rule);
+  transition:width .4s ease,background .4s ease;
+}
+.rungs li span{
+  position:relative;font-family:var(--mono);font-size:10px;
+  color:var(--rule);background:var(--paper);padding:0 5px;
+  transition:color .4s ease;
+}
+.rungs li.on::before{width:31px;background:var(--brass)}
+.rungs li.on span{color:var(--brass)}
+
+/* ── hero ───────────────────────────────────────────────── */
+.hero{padding:16vh 0 9vh}
+.thesis{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(2.5rem,6.4vw,5rem);line-height:1.04;
+  letter-spacing:-.015em;margin:0 0 34px;max-width:17ch;
+}
+.thesis em{font-style:italic;color:var(--pine)}
+.lede{
+  font-size:1.2rem;color:var(--steel);max-width:52ch;margin:0 0 40px;
+  line-height:1.6;
+}
+.herobtns{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;text-decoration:none;
+  padding:14px 22px;border:1px solid var(--pine);color:var(--pine);
+  background:none;cursor:pointer;transition:background .2s,color .2s;
+}
+.btn:hover,.btn:focus-visible{background:var(--pine);color:var(--paper)}
+.btn.solid{background:var(--pine);color:var(--paper)}
+.btn.solid:hover,.btn.solid:focus-visible{background:var(--ink);border-color:var(--ink)}
+
+/* ── safety notice ──────────────────────────────────────── */
+.safety{
+  border:1px solid var(--rule);border-left:3px solid var(--brass);
+  padding:26px 30px;margin:0 0 12vh;background:var(--paper-deep);
+}
+.safety h2{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 12px;font-weight:500;
+}
+.safety p{margin:0 0 10px;font-size:.95rem;color:var(--steel);max-width:64ch}
+.safety p:last-child{margin-bottom:0}
+.safety strong{color:var(--ink);font-weight:500}
+
+/* ── section frame ──────────────────────────────────────── */
+.sec{padding:0 0 12vh}
+.sechead{
+  display:flex;align-items:baseline;gap:18px;
+  border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:44px;
+}
+.sechead h2{
+  font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.4vw,2.6rem);
+  margin:0;letter-spacing:-.01em;
+}
+.sechead .tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--steel);margin-left:auto;white-space:nowrap;
+}
+
+/* ── downloads ──────────────────────────────────────────── */
+.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.doc{background:var(--paper);padding:30px 28px;display:flex;flex-direction:column}
+.doc .kind{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 14px;
+}
+.doc h3{
+  font-family:var(--serif);font-weight:400;font-size:1.65rem;line-height:1.15;
+  margin:0 0 12px;letter-spacing:-.01em;
+}
+.doc p{margin:0 0 24px;font-size:.94rem;color:var(--steel);flex:1}
+.doc .grab{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  font-family:var(--mono);font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--pine);border-bottom:1px solid var(--rule);
+  padding-bottom:6px;align-self:flex-start;transition:border-color .2s;
+}
+.doc .grab:hover,.doc .grab:focus-visible{border-color:var(--pine)}
+.doc .grab .meta{color:var(--steel);letter-spacing:.04em}
+
+/* ── the ladder ─────────────────────────────────────────── */
+.step{
+  display:grid;grid-template-columns:56px 1fr;gap:26px;
+  padding:24px 0;border-bottom:1px solid var(--rule);
+}
+.step:last-child{border-bottom:none}
+.step .num{
+  font-family:var(--mono);font-size:12px;color:var(--brass);
+  padding-top:7px;letter-spacing:.06em;
+}
+.step h3{
+  font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 6px;
+  letter-spacing:-.01em;
+}
+.step .q{color:var(--steel);font-style:italic;margin:0 0 8px;font-size:1rem}
+.step .move{margin:0;font-size:.94rem}
+.step .move b{font-family:var(--mono);font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--steel);font-weight:400;margin-right:9px}
+
+/* ── share / QR ─────────────────────────────────────────── */
+.share{display:grid;grid-template-columns:1fr 240px;gap:52px;align-items:start}
+.share ol{margin:0;padding-left:1.2em;color:var(--steel)}
+.share ol li{margin-bottom:14px;font-size:.96rem}
+.share ol li b{color:var(--ink);font-weight:500}
+.qrbox{border:1px solid var(--rule);padding:20px;text-align:center;background:#fff}
+.qrbox img{width:100%;height:auto;display:block;image-rendering:pixelated}
+.qrbox .cap{
+  font-family:var(--mono);font-size:10px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--steel);margin-top:14px;
+}
+
+/* ── footer ─────────────────────────────────────────────── */
+footer{border-top:1px solid var(--rule);padding:40px 0 70px;color:var(--steel);font-size:.88rem}
+footer p{margin:0 0 8px;max-width:62ch}
+footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+
+/* ── responsive ─────────────────────────────────────────── */
+@media (max-width:860px){
+  :root{--rail:0px}
+  .railfix{display:none}
+  .wrap{padding:0 22px}
+  .docs{grid-template-columns:1fr}
+  .share{grid-template-columns:1fr;gap:36px}
+  .qrbox{max-width:240px}
+  .hero{padding:11vh 0 7vh}
+  .step{grid-template-columns:40px 1fr;gap:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<nav class="railfix" aria-hidden="true">
+  <ol class="rungs">
+    <li data-r="0"><span>0</span></li>
+    <li data-r="1"><span>1</span></li>
+    <li data-r="2"><span>2</span></li>
+    <li data-r="3"><span>3</span></li>
+    <li data-r="4"><span>4</span></li>
+    <li data-r="5"><span>5</span></li>
+    <li data-r="6"><span>6</span></li>
+  </ol>
+</nav>
+
+<main class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Free · Open · No signup · No tracking</p>
+    <h1 class="thesis">You are not fighting a lack of <em>willpower</em>. You are running a learned <em>pattern</em>.</h1>
+    <p class="lede">Learned patterns can be understood, and what can be understood can be changed. This is a free framework for naming the pattern you are in and climbing out of it — one rung at a time.</p>
+    <div class="herobtns">
+      <a class="btn solid" href="#documents">Get the documents</a>
+      <button class="btn" id="copyPrimer" type="button">Copy the AI primer</button>
+    </div>
+  </header>
+
+  <section class="safety">
+    <h2>Read this first</h2>
+    <p>This is a <strong>self-understanding tool, not treatment.</strong> It does not diagnose, and it does not replace therapy, medical care, or detox.</p>
+    <p>If you are facing physical withdrawal from alcohol, benzodiazepines, or opioids, that can be medically dangerous — <strong>talk to a doctor before stopping.</strong> If you are thinking about harming yourself, please reach a person tonight: in the US call or text <strong>988</strong>; the SAMHSA helpline is <strong>1-800-662-4357</strong>, free and open around the clock. Outside the US, <a href="https://findahelpline.com">findahelpline.com</a> lists local lines.</p>
+    <p>Rung 0 is safety. It always comes first.</p>
+  </section>
+
+  <section class="sec" id="documents">
+    <div class="sechead">
+      <h2>The documents</h2>
+      <span class="tag">Four files · Free to copy, print, share</span>
+    </div>
+    <div class="docs">
+
+      <article class="doc">
+        <p class="kind">Start here — for anyone</p>
+        <h3>The Three Pillars &amp; The Ladder</h3>
+        <p>The whole framework in one plain-language file: the three structures that hold a pattern in place, the seven rungs out, and what to do in the next ten minutes. Written to be pasted straight into any AI assistant so it can walk with you.</p>
+        <a class="grab" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span class="meta">MD · 12 KB</span></a>
+      </article>
+
+      <article class="doc">
+        <p class="kind">The full map</p>
+        <h3>Sovereign Ladder Protocol v4</h3>
+        <p>The complete adaptive system: five-dimension intake, gap analysis, five pathway types, the Unified Sovereign Score, and the mandatory safety overrides. Ends with a printable client worksheet.</p>
+        <a class="grab" href="assets/sovereign-ladder-protocol-v4.pdf" download>Download &darr; <span class="meta">PDF · 76 KB</span></a>
+      </article>
+
+      <article class="doc">
+        <p class="kind">The theory</p>
+        <h3>Master Geometry of Addiction Sovereignty</h3>
+        <p>Why the pattern holds: the missing-mechanism principle, the three diagnostic dimensions, and the seven rungs read through what was absent rather than what went wrong.</p>
+        <a class="grab" href="assets/master-geometry-of-addiction-sovereignty.pdf" download>Download &darr; <span class="meta">PDF · 52 KB</span></a>
+      </article>
+
+      <article class="doc">
+        <p class="kind">For builders</p>
+        <h3>PSP-1 Protocol Spec</h3>
+        <p>The machine-readable version. Eight hard rules, a six-step loop, and a conformance test — so anyone building a tool on this framework can be audited against it instead of trusted on faith.</p>
+        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 8 KB</span></a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="sec" id="ladder">
+    <div class="sechead">
+      <h2>The seven rungs</h2>
+      <span class="tag">Do not skip · Safety precedes insight</span>
+    </div>
+
+    <div class="step" data-step="0">
+      <div class="num">00</div>
+      <div>
+        <h3>Safety</h3>
+        <p class="q">Am I regulated enough to even look?</p>
+        <p class="move"><b>Move</b>Lower the nervous system before expecting clarity. Nobody sees straight while flooded.</p>
+      </div>
+    </div>
+    <div class="step" data-step="1">
+      <div class="num">01</div>
+      <div>
+        <h3>Awareness</h3>
+        <p class="q">How do I recognise the pattern?</p>
+        <p class="move"><b>Move</b>Log it without judgment: trigger, emotion, urge, behaviour. Data, not confession.</p>
+      </div>
+    </div>
+    <div class="step" data-step="2">
+      <div class="num">02</div>
+      <div>
+        <h3>Separation</h3>
+        <p class="q">Who is watching the pattern?</p>
+        <p class="move"><b>Move</b>"This is a pattern running through my nervous system. It is not who I am."</p>
+      </div>
+    </div>
+    <div class="step" data-step="3">
+      <div class="num">03</div>
+      <div>
+        <h3>Redirection</h3>
+        <p class="q">Where does this energy go now?</p>
+        <p class="move"><b>Move</b>Move the urge into motion, water, breath, making something. Redirect — don't white-knuckle.</p>
+      </div>
+    </div>
+    <div class="step" data-step="4">
+      <div class="num">04</div>
+      <div>
+        <h3>Construction</h3>
+        <p class="q">What replaces the old pattern?</p>
+        <p class="move"><b>Move</b>Build one container that holds when you wobble: a boundary, a routine, a room, a time.</p>
+      </div>
+    </div>
+    <div class="step" data-step="5">
+      <div class="num">05</div>
+      <div>
+        <h3>Integration</h3>
+        <p class="q">Who am I becoming?</p>
+        <p class="move"><b>Move</b>Rewrite the story so the past becomes wisdom instead of a secret.</p>
+      </div>
+    </div>
+    <div class="step" data-step="6">
+      <div class="num">06</div>
+      <div>
+        <h3>Sovereignty</h3>
+        <p class="q">What does freedom feel like?</p>
+        <p class="move"><b>Move</b>Triggers still arrive. They no longer command. You are the origin again.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="share">
+    <div class="sechead">
+      <h2>Pass it on</h2>
+      <span class="tag">Print the code · Hand it to someone</span>
+    </div>
+    <div class="share">
+      <ol>
+        <li><b>Scan or point anyone here.</b> The code opens this page. Nothing to install, nothing to sign up for, no account, no email.</li>
+        <li><b>Print it small.</b> The code survives being shrunk to about an inch — a card, a flyer, the back of a meeting handout, a poster in a hallway.</li>
+        <li><b>The link never breaks.</b> Update a document in the repository and this page serves the new version. The printed code keeps working.</li>
+        <li><b>Copy the whole thing.</b> Everything here is free to reproduce, translate, print and distribute. If it helps one person, it did its job.</li>
+      </ol>
+      <div class="qrbox">
+        <img src="assets/qr-code.png" alt="QR code linking to this page">
+        <p class="cap">Scan to open this page</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Developed and formulated by <b>Logan Royce Lorentz</b>. Released free for anyone who needs it.</p>
+    <p>Licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> — copy it, print it, translate it, build on it. Keep the attribution.</p>
+    <p class="mono">A framework is a map, not the territory. Test it, and discard what does not hold.</p>
+  </footer>
+
+</main>
+
+<script>
+(function(){
+  var steps = document.querySelectorAll('.step');
+  var rungs = document.querySelectorAll('.rungs li');
+  if(steps.length && rungs.length && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          var i = e.target.getAttribute('data-step');
+          rungs.forEach(function(r){
+            r.classList.toggle('on', r.getAttribute('data-r') === i);
+          });
+        }
+      });
+    }, {rootMargin:'-45% 0px -45% 0px'});
+    steps.forEach(function(s){ io.observe(s); });
+  }
+
+  var btn = document.getElementById('copyPrimer');
+  if(btn){
+    btn.addEventListener('click', function(){
+      var label = btn.textContent;
+      fetch('assets/three-pillars-ai-primer.md')
+        .then(function(r){ if(!r.ok) throw new Error(); return r.text(); })
+        .then(function(t){ return navigator.clipboard.writeText(t); })
+        .then(function(){
+          btn.textContent = 'Copied — paste it to any AI';
+          setTimeout(function(){ btn.textContent = label; }, 3200);
+        })
+        .catch(function(){
+          btn.textContent = 'Copy failed — use the download';
+          setTimeout(function(){ btn.textContent = label; }, 3200);
+        });
+    });
+  }
+})();
+</script>
+</body>
+</html>
