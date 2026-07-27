@@ -1,20 +1,22 @@
-$b = 'https://joeromance84.github.io/sovereign-ladder/'
+$gh = 'C:\Program Files\GitHub CLI\gh.exe'
+$r  = 'Joeromance84/sovereign-ladder'
 
-for ($i = 1; $i -le 20; $i++) {
-    $idx = (Invoke-WebRequest -Uri $b -UseBasicParsing -TimeoutSec 20).Content
-    if ($idx -match 'MD\s*.\s*17 KB') { break }
-    Start-Sleep -Seconds 15
-    Write-Output "  attempt $i - index still stale"
-}
+Write-Output '=== BEFORE ==='
+$b = & $gh api "repos/$r" | ConvertFrom-Json
+Write-Output ("  topics : " + ($b.topics -join ', '))
 
 Write-Output ''
-Write-Output '=== SIZE LABELS AS SERVED ==='
-[regex]::Matches($idx, '(MD|PDF)\s*.\s*\d+ KB') | ForEach-Object { Write-Output ("  " + $_.Value) }
+Write-Output '=== SWAP: remove cbt, add psychology ==='
+& $gh repo edit $r --remove-topic cbt --add-topic psychology 2>&1 | Out-String | Write-Output
+Write-Output ("  exit code: " + $LASTEXITCODE)
 
 Write-Output ''
-Write-Output '=== ACTUAL FILE SIZES ==='
-foreach ($f in @('assets/three-pillars-ai-primer.md','assets/sovereign-ladder-protocol-v4.pdf','assets/master-geometry-of-addiction-sovereignty.pdf','assets/psp-1-protocol-spec.md')) {
-    $r = Invoke-WebRequest -Uri ($b + $f) -UseBasicParsing -TimeoutSec 25
-    Write-Output ("  {0,-52} {1} KB" -f $f, [math]::Round($r.RawContentLength / 1024))
-}
+Write-Output '=== AFTER ==='
+Start-Sleep -Seconds 3
+$a = & $gh api "repos/$r" | ConvertFrom-Json
+Write-Output ("  topics : " + ($a.topics -join ', '))
+Write-Output ("  count  : " + $a.topics.Count)
+Write-Output ("  cbt removed  : " + (-not ($a.topics -contains 'cbt')))
+Write-Output ("  psychology in: " + ($a.topics -contains 'psychology'))
+Write-Output ("  homepage kept: " + $a.homepage)
 Write-Output '--- COMPLETE ---'

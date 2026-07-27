@@ -181,6 +181,53 @@ a{color:var(--pine)}
 .step .move b{font-family:var(--mono);font-size:10px;letter-spacing:.13em;
   text-transform:uppercase;color:var(--steel);font-weight:400;margin-right:9px}
 
+/* ── state selector ─────────────────────────────────────── */
+.states{border:1px solid var(--rule);background:var(--paper)}
+.state{border-bottom:1px solid var(--rule)}
+.state:last-child{border-bottom:none}
+.state > button{
+  width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  display:flex;align-items:baseline;gap:18px;padding:22px 26px;
+  font-family:inherit;color:var(--ink);transition:background .18s;
+}
+.state > button:hover{background:var(--paper-deep)}
+.state > button .rn{
+  font-family:var(--mono);font-size:11px;color:var(--brass);
+  letter-spacing:.08em;flex:none;width:22px;
+}
+.state > button .lab{
+  font-family:var(--serif);font-size:1.32rem;line-height:1.2;
+  letter-spacing:-.01em;flex:1;
+}
+.state > button .chev{
+  font-family:var(--mono);font-size:14px;color:var(--steel);
+  flex:none;transition:transform .22s;
+}
+.state.open > button{background:var(--paper-deep)}
+.state.open > button .chev{transform:rotate(45deg)}
+.panel{padding:0 26px 26px 66px;max-width:66ch}
+.panel .q{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--brass);margin:0 0 10px;
+}
+.panel p{margin:0 0 16px;font-size:.97rem}
+.panel .do{
+  border-left:2px solid var(--brass);padding:14px 0 14px 20px;
+  background:var(--paper-deep);padding-right:20px;
+}
+.panel .do .dl{
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--steel);margin:0 0 8px;
+}
+.panel .do p{margin:0;font-size:.95rem;color:var(--ink)}
+.statehead{margin:0 0 22px;color:var(--steel);max-width:60ch;font-size:1.02rem}
+.seamrow{
+  padding:14px 26px;background:var(--paper-deep);
+  border-bottom:1px solid var(--rule);
+  font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--steel);
+}
+
 /* ── how to use ─────────────────────────────────────────── */
 .use{margin:0 0 40px}
 .use h3{
@@ -272,7 +319,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
     <h1 class="thesis">You are not fighting a lack of <em>willpower</em>. You are running a learned <em>pattern</em>.</h1>
     <p class="lede">Learned patterns can be understood, and what can be understood can be changed. This is a free framework for naming the pattern you are in and climbing out of it — one rung at a time.</p>
     <div class="herobtns">
-      <a class="btn solid" href="#documents">Get the documents</a>
+      <a class="btn solid" href="#start">Start where you are</a>
       <button class="btn" id="copyPrimer" type="button">Copy the AI primer</button>
     </div>
   </header>
@@ -282,6 +329,98 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
     <p>This is a <strong>self-understanding tool, not treatment.</strong> It does not diagnose, and it does not replace therapy, medical care, or detox.</p>
     <p>If you are facing physical withdrawal from alcohol, benzodiazepines, or opioids, that can be medically dangerous — <strong>talk to a doctor before stopping.</strong> If you are thinking about harming yourself, please reach a person tonight: in the US call or text <strong>988</strong>; the SAMHSA helpline is <strong>1-800-662-4357</strong>, free and open around the clock. Outside the US, <a href="https://findahelpline.com">findahelpline.com</a> lists local lines.</p>
     <p>Rung 0 is safety. It always comes first.</p>
+  </section>
+
+  <section class="sec" id="start">
+    <div class="sechead">
+      <h2>Where are you right now?</h2>
+      <span class="tag">Pick the one that sounds like today</span>
+    </div>
+    <p class="statehead">You don't need to read anything first. Find the line that fits, and you'll get one question answered and one thing to do in the next ten minutes.</p>
+
+    <div class="states">
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">00</span><span class="lab">I can't think straight. Everything is too loud.</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">Why can't I think clearly right now?</p>
+          <p>Because you're flooded, and nobody sees themselves accurately in that state. This isn't a character problem — it's your nervous system doing what it's built to do. Insight is not available yet, and chasing it now usually makes things louder.</p>
+          <p>Nothing else on this page matters until this settles. Come back to the rest later.</p>
+          <div class="do">
+            <p class="dl">Do this now</p>
+            <p>Put both feet flat on the floor. Breathe out longer than you breathe in — four in, six out — six times. Then name five things you can see in the room, out loud. That's the whole task.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">01</span><span class="lab">I keep doing this. I don't know why.</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">Why do I keep repeating something I've decided to stop?</p>
+          <p>Because it was learned, not chosen. It installed itself through repetition until it ran without being called — which is why it arrives before you decide anything. Understanding it doesn't dissolve it, but seeing it clearly is where every other move starts.</p>
+          <p>Right now you're trying to think your way out of something you've never actually watched. So watch it first.</p>
+          <div class="do">
+            <p class="dl">Do this now</p>
+            <p>Write down three moments from today: what set it off, what you felt, what you wanted to do, what you did. Don't judge any of it and don't fix anything. You're collecting data, not confessing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">02</span><span class="lab">I can see the pattern. I'm scared it's just who I am.</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">Am I the problem?</p>
+          <p>No. You're the one noticing the problem, and those are not the same thing. If the pattern were identical to you, there'd be nobody left over to be worried about it — and yet here you are, worried.</p>
+          <p>That gap between the noticer and the thing being noticed is small and it's real. Everything from here works by widening it.</p>
+          <div class="do">
+            <p class="dl">Do this now</p>
+            <p>Say this out loud, once, even if it feels false: <em>"This is a pattern running through my nervous system. It is not who I am."</em> It's not supposed to feel true yet. Saying it is the work.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">03</span><span class="lab">The urge is here and I'm trying not to act on it.</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">Where does this energy go now?</p>
+          <p>Somewhere physical, and quickly. Bracing against an urge keeps it at the centre of your attention, which is exactly where it wants to be — that's why gritting your teeth works for ten minutes and then stops working. The energy is real and it isn't going to evaporate. It has to go somewhere.</p>
+          <p>Don't try to want it less. Move it.</p>
+          <div class="do">
+            <p class="dl">Do this now</p>
+            <p>Pick one and start inside the next minute: walk to the end of the street, cold water on your hands and face, twenty push-ups, or make something badly. Motion, not stillness. If you did this, you did the whole job for today — nothing here is unfinished.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="seamrow">Below this line the work changes — these two are for a calm day, not a hard moment</div>
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">04</span><span class="lab">I'm steady. I want to build something that holds.</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">What replaces the old pattern?</p>
+          <p>A container — something outside your willpower that keeps working on the days you're not at your best. Willpower is a bad load-bearing wall. Structure isn't.</p>
+          <p>This is cold work. Do it when nothing is firing, because designing your life mid-surge doesn't go well.</p>
+          <div class="do">
+            <p class="dl">Do this week</p>
+            <p>Build exactly one, and make it small enough that it survives a bad week: a place in your home that's for one thing only, fifteen minutes a day that belong to you, or one clear rule about who gets access to your energy and when.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="state">
+        <button type="button" aria-expanded="false"><span class="rn">05</span><span class="lab">The pattern doesn't run me anymore. What now?</span><span class="chev">+</span></button>
+        <div class="panel">
+          <p class="q">Who am I now?</p>
+          <p>The one who chooses. Triggers still show up — that doesn't stop, and it isn't a relapse. What changed is that they arrive as information rather than as instructions.</p>
+          <p>The last piece isn't more work on yourself. It's being witnessed, and eventually witnessing someone else. A pattern isolates by design; the exit is other people.</p>
+          <div class="do">
+            <p class="dl">Do this now</p>
+            <p>Tell one person something true about where you've been. Not a performance and not the whole story — one true sentence to one human being who gets to know you.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <section class="sec" id="documents">
@@ -467,6 +606,33 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
 
 <script>
 (function(){
+  // State selector. Panels are visible by default so the content still
+  // works with JS disabled; collapsing only happens once JS is running.
+  var states = document.querySelectorAll('.state');
+  states.forEach(function(s, i){
+    var btn = s.querySelector('button');
+    var panel = s.querySelector('.panel');
+    if(!btn || !panel) return;
+    panel.id = panel.id || ('panel-' + i);
+    btn.setAttribute('aria-controls', panel.id);
+    panel.style.display = 'none';
+    btn.addEventListener('click', function(){
+      var open = s.classList.contains('open');
+      states.forEach(function(o){
+        o.classList.remove('open');
+        var p = o.querySelector('.panel');
+        var b = o.querySelector('button');
+        if(p) p.style.display = 'none';
+        if(b) b.setAttribute('aria-expanded', 'false');
+      });
+      if(!open){
+        s.classList.add('open');
+        panel.style.display = 'block';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
   var steps = document.querySelectorAll('.step');
   var rungs = document.querySelectorAll('.rungs li');
   if(steps.length && rungs.length && 'IntersectionObserver' in window){
