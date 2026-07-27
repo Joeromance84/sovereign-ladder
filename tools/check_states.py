@@ -44,3 +44,13 @@ print("  divs balanced        :", html.count("<div") == html.count("</div>"))
 print("  buttons balanced     :", html.count("<button") == html.count("</button>"))
 print("  terminated           :", html.rstrip().endswith("</html>"))
 print("  size                 :", len(html), "bytes")
+
+print("")
+print("=== MOBILE DENSITY ===")
+print("  selector tightened   :", ".state > button{padding:15px 16px" in html)
+print("  panel padding tuned  :", ".panel{padding:0 16px 20px 45px}" in html)
+
+print("")
+print("=== NO COMMERCIAL CONTENT ===")
+bad = [w for w in ("nourish", "skin", "derma", "moistur", "product") if w in html.lower()]
+print("  commercial terms     :", bad if bad else "none")

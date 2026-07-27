@@ -11,7 +11,7 @@ Verify on macOS:      shasum -a 256 <file>
 Verify on Linux:      sha256sum <file>
 
 ```
-27760ad7ff354d8edf480f0a574f1dd5698604a0d163800e1fe41014b1f80dc6  index.html
+43bdb4380fa408c1720998fa63c0d152a2137f49a1f9f14b2a8a0034089af041  index.html
 a86cc3b0f187e93a04d18d29de94b7293d5223fcbe9a11fc3ec4e7497ba9c509  terms.html
 7a4a0e9eb84449cb3dcb9db423b5ea85841fe53d167a47ff4a9da2c697d7991e  assets/three-pillars-ai-primer.md
 0d1924827d671f8a6cb63e3c1665f67425fc9a4b0f6ce03176be27a7f56da73c  assets/psp-1-protocol-spec.md
