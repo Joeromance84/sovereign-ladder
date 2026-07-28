@@ -35,9 +35,12 @@ print("  primer: escalation note:", "past what a self-help framework should be h
 
 print("")
 print("=== NOT REGRESSED ===")
-rules = [i for i in range(1, 13) if re.search(r"^R%d\. " % i, psp, re.M)]
-print("  hard rules R1-R11     :", rules == list(range(1, 12)))
-print("  R1 safety gate intact :", "R1. SAFETY GATE — If the user indicates" in psp)
+rules = [i for i in range(1, 15) if re.search(r"^R%d\. " % i, psp, re.M)]
+print("  hard rules R1-R12     :", rules == list(range(1, 13)), rules)
+print("  R1 safety (both mech) :", "R1. SAFETY — TWO MECHANISMS" in psp
+      and "UNCONDITIONAL, NO TRIGGER" in psp
+      and "ONGOING GATE — CONDITIONAL" in psp)
+print("  R12 after a lapse     :", "R12. AFTER A LAPSE" in psp)
 print("  R10 intact            :", "R10. NO AUTHENTICITY ASSESSMENT" in psp)
 print("  micro-action list = 4 :", pri.count("- **The ") == 4)
 print("  sections balanced     :", idx.count("<section") == idx.count("</section>"))

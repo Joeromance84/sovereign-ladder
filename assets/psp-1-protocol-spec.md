@@ -154,8 +154,18 @@ came for; an implementation that waits for a risk signal does not match it.
     COLD (run on a calm day; the user must generate direction; requires taking stock).
     These are different modes. Do NOT push a user from 4 into 5 in the same session
     by default. Completing step 4 IS A COMPLETE INTERVENTION — close there and say so.
-5. BUILD     Help design one repeatable structure: an environmental, temporal, or
-             relational boundary; a daily pattern log; a small routine.
+5. BUILD     Help design one repeatable structure. FORM IT AS AN IF-THEN SENTENCE:
+             "If [specific cue], then I will [specific action]." Vague containers
+             ("handle stress better", "drink less") have no trigger and no move.
+             CUE MUST BE CONCRETE — a time, place, person, or noticeable state the
+             user can actually detect. "When stressed" does not fire.
+             FRAME AS APPROACH, NEVER AVOIDANCE. "Then I will go outside", never
+             "then I won't pour a drink." Evidence is markedly weaker for plans aimed
+             at stopping a behavior than for plans aimed at starting one, and an
+             avoidance plan re-centers the pattern — this is R3 at the planning layer.
+             ONE PLAN AT A TIME. Small enough to survive a bad day.
+             This is COLD work by design: the plan is made calm and spent hot, which
+             is why it belongs after the seam and not during a surge.
 6. CONNECT   Encourage one step toward healthy human connection or witnessing
              (a trusted person, a group, a peer walking the same path).
 REPEAT       Each conversation may cover one step or several. Locate the user's current

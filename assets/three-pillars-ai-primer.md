@@ -186,6 +186,32 @@ Those are not the same activity, and they do not follow each other naturally in 
 
 Come back to 4–6 another day, in daylight, when you are steady and curious rather than activated. They will still be there.
 
+### RUNG 4, MADE SPECIFIC — THE IF-THEN SENTENCE
+
+"Build a container" is the vaguest instruction in this framework, and vagueness is where Rung 4 dies. Here is the specific version.
+
+**A container is a sentence with two halves:**
+
+> **If** [this exact situation happens], **then** I will [this exact thing].
+
+Not *I'll handle stress better.* Not *I'll drink less.* Those are wishes with no trigger and no move. Instead:
+
+> If I get home and the flat is quiet, then I put my shoes back on and walk to the corner and back.
+> If someone cancels on me, then I text one other person before I open anything.
+> If I wake up before six, then I fill the kettle before I pick up my phone.
+
+**Why the shape matters.** The point is not motivation, it is *deciding in advance.* The plan moves the decision out of the moment — you settle it once, calmly, so the hard minute doesn't require deciding anything. You just do the next thing, because the next thing is already named. This is exactly why Rung 4 is cold work: **the plan is made cold and spent hot.**
+
+**Three rules for writing one:**
+
+1. **Name the cue exactly.** A time, a place, a person, a feeling you can actually notice. "When I'm stressed" is too vague to fire. "When I close my laptop at the end of a shift" fires.
+2. **Say what you WILL do, not what you won't.** *Then I will go outside* — not *then I won't pour a drink.* This matters more than it sounds: the research is markedly weaker for plans framed around stopping something than for plans framed around starting something, and it lines up with the rule against white-knuckling. An avoidance plan puts the pattern back at the centre of the sentence. Give the moment somewhere to go instead.
+3. **Make it small enough to survive a bad day.** If the plan only works when you're at your best, it isn't a container — it's another thing to fail at. One shoe by the door beats a gym membership.
+
+**One at a time.** Write one sentence. Run it for a while. The instinct to write six is the same instinct that makes people quit in week two.
+
+**Honest note on the evidence.** If-then plans are among the better-supported tools in behaviour change — a meta-analysis across 94 tests found a medium-to-large effect on reaching goals compared with simply intending to. But effects are smaller when behaviour is measured objectively rather than self-reported, and smaller again for reducing an unwanted behaviour than for starting a wanted one. Expect a useful nudge, not a solution. That is still more than most of what gets offered.
+
 ### The Anchor Sentences (one per stage of the climb)
 
 - Rung 1: *"This is what I do. It is not who I am."*
@@ -343,6 +369,8 @@ This framework was assembled from lived experience, not from a laboratory. That 
 **What happens after a lapse.** The idea that a single slip becomes a full return through interpretation rather than through the substance itself comes from Marlatt and Gordon's relapse prevention work, where it is called the abstinence violation effect. Attributing a lapse to internal, stable, global causes ("I am weak") is associated with worse outcomes than attributing it to specific, situational ones. **Be aware the picture is mixed:** at least one large study capturing lapses in near real time found that guilt and self-blame after a first slip did not predict what followed, while a drop in belief that change was still possible did. The section above is written to that narrower finding rather than to the popular version, which overstates what the evidence supports.
 
 **Repetition and automaticity.** That a repeated behaviour in a consistent context becomes automatic is well established, and it is the reason this framework asks for repeatable actions rather than one-time insights. The same research is the reason it refuses to give you a schedule: measured times to automaticity vary from under three weeks to over eight months between individuals doing the identical task. Anyone quoting you a fixed number of days is quoting a myth.
+
+**If-then plans at Rung 4.** Specifying in advance *when, where and how* you will act — rather than only intending to act — is called an implementation intention, and a meta-analysis across 94 independent tests found a medium-to-large improvement in goal attainment over intention alone. The mechanism is that the plan makes the cue easier to notice and the response more automatic, which removes the moment of deciding. **Two honest limits:** later analyses of specific health behaviours found smaller effects, particularly when behaviour was measured objectively rather than self-reported, and plans aimed at *reducing* an unwanted behaviour perform less well than plans aimed at *starting* a wanted one. That asymmetry is why the guidance above insists on naming what you will do rather than what you won't.
 
 ### What has *not* been established
 

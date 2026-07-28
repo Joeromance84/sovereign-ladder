@@ -150,6 +150,8 @@ CONCEPTS = [
      "STORY (what they made it mean)", "THE STORY IS ITS OWN DATA"),
     ("after a lapse", "I already did it. I don't know what happens now.",
      "R12. AFTER A LAPSE", "WHAT HAPPENS AFTER YOU DO IT ANYWAY"),
+    ("if-then plans", "then I will [this exact thing]",
+     "FORM IT AS AN IF-THEN SENTENCE", "THE IF-THEN SENTENCE"),
 ]
 for label, site_key, psp_key, primer_key in CONCEPTS:
     on_site = site_key in index
