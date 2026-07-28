@@ -153,9 +153,33 @@ Come back to 4–6 another day, in daylight, when you are steady and curious rat
 Massive life overhauls fail; micro-interventions succeed. Offer one at a time.
 
 - **The Daily Pause** — When a trigger arises, take a 30-second somatic pause before responding.
-- **The Pattern Log** — Write down the trigger, the emotion, and the urge. Treat it as external data, not identity. Start with just three moments today: don't judge, don't fix, just notice.
+- **The Pattern Log** — Write down the trigger, the emotion, the urge, and **the story** — what you told yourself it meant. Treat all of it as external data, not identity. Start with just three moments today: don't judge, don't fix, just notice.
 - **The Single-Sentence Anchor** — Repeat the decoupling sentence out loud.
 - **The Micro-Redirection** — Take the surge of nervous energy and move it into physical motion: a walk, water, drawing, breathwork.
+
+### THE STORY IS ITS OWN DATA
+
+Most logs stop at what happened. The step people skip is what they made it mean — and that is usually where the real pattern lives.
+
+Something happens. A silence, a no, a look. Before you have finished registering it, you have already told yourself what it means, and the meaning arrives feeling exactly like the event. It does not feel like an interpretation. It feels like a fact you noticed.
+
+The move to watch for is the jump from **one** to **all**:
+
+> She said no → every girl rejects me → nobody wants me → everyone is against me
+
+Each step feels like the obvious continuation of the last. But only the first one happened. The rest is a story that got built at speed, and once it is built you stop seeing the event at all — you only see the story.
+
+**How to catch it.** It leaves fingerprints in specific words: *every, all, always, never, nobody, everyone, no one, they all, out to get me.* When one of those turns up in your own account of something, that is the seam between what happened and what you made it mean. Not proof you are wrong — a place to look.
+
+**The separation.** This is Rung 2 applied to the story instead of to the self:
+
+> *This is what happened. This is what I made it mean. They are not the same thing.*
+
+You do not have to decide the story is false. You only have to notice it is a story. That gap is enough to move in.
+
+**The check, if you want one.** Take the absolute word and test it against the actual record. Literally every? Or three, and the three landed hard? Not to talk yourself out of the feeling — the feeling is real either way — but because "three times, and it hurt" and "everyone, always" lead to very different places.
+
+**One caution.** If a belief like this stays fixed no matter what evidence turns up, keeps you frightened of people, or has been running for a long stretch rather than a bad week, that is past what a self-help framework should be handling. Not because something is wrong with you — because that is genuinely hard to shift alone, and there are people trained for exactly it. Rung 0 logic applies: get the right support first, then the rest is workable.
 
 ### WHY ONCE IS NOT ENOUGH
 
@@ -261,6 +285,8 @@ This framework was assembled from lived experience, not from a laboratory. That 
 **Not arguing with resistance.** Motivational Interviewing established that direct confrontation tends to increase defensiveness, and that change talk arises more readily when the person is not being pushed. That underlies the rule against white-knuckle coaching.
 
 **The pattern log.** Self-monitoring is one of the more durable findings in behaviour change: recording a behaviour changes it, partly by making it visible.
+
+**Separating the story from the event.** Examining an interpretation against actual evidence — rather than accepting it because it arrived feeling like a fact — is the core move of cognitive restructuring, which has been tested extensively in cognitive behavioural therapy. Overgeneralising from one instance to all instances is one of the most commonly described patterns in that literature. What this framework does *not* do is diagnose: naming a pattern in your own thinking is self-observation, and it is not the same as a clinical assessment. That distinction is deliberate and it is not optional.
 
 **Repetition and automaticity.** That a repeated behaviour in a consistent context becomes automatic is well established, and it is the reason this framework asks for repeatable actions rather than one-time insights. The same research is the reason it refuses to give you a schedule: measured times to automaticity vary from under three weeks to over eight months between individuals doing the identical task. Anyone quoting you a fixed number of days is quoting a myth.
 
