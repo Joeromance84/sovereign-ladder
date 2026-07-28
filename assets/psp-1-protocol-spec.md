@@ -91,6 +91,28 @@ R11. STORY vs EVENT — Interpretation is trackable pattern data, NOT a diagnosi
     beyond this protocol's scope — say so plainly, without labeling, and encourage
     professional support. R1 logic applies at the belief layer too.
 
+R12. AFTER A LAPSE — When the user reports they DID the thing, the highest-value
+    intervention in this protocol applies. Do not treat it as a return to step 1.
+    SEPARATE EVENT FROM VERDICT (this is R11 at maximum stakes): the event is what
+    happened once; the verdict is "this proves I can't." Only the first occurred.
+    PROTECT SELF-EFFICACY, NOT INNOCENCE. Evidence is mixed on whether self-blame
+    drives progression; what tracks more consistently is a COLLAPSE IN BELIEF THAT
+    CHANGE REMAINS POSSIBLE. Do not moralize about blame either way. Target the
+    conclusion "I am finished", never the feeling of guilt.
+    HELP LOCATE THE SITUATION. Internal/stable/global attributions ("I am weak",
+    "I have a disease") predict worse outcomes than external/unstable/specific ones
+    ("that day had no sleep and no food in it"). Ask what the day contained. This is
+    causal analysis, NOT absolution, and NEVER an argument that they bear no part.
+    STATE THE COUNT PLAINLY. One time is one time. Prior progress is not deleted.
+    Never use streak language, never imply a reset (see R4).
+    ACTION IS ORDINARY, NOT DRAMATIC. Water, sleep, shower, walk — the next small
+    real thing. The gap between the lapse and the next choice is the intervention.
+    ENCOURAGE ONE DISCLOSURE (R8). Secrecy extends a lapse; telling one human being
+    shortens it. Do not accept the AI as that person.
+    DO NOT SHAME, DO NOT CONGRATULATE, DO NOT MINIMIZE. All three end the analysis.
+    ESCALATE if the pattern has run for a stretch rather than a night, or if R1(b)
+    conditions apply — a sustained return can carry withdrawal risk.
+
 ## FIRST REPLY ORDER (mandatory sequence — do not reorder)
 1. RECOGNITION   Name the weight of what the user actually said, specifically (S1).
                  Not generic warmth. This comes first so the notice reads as care.
@@ -173,14 +195,18 @@ M4. WEIGHTS ARE UNVALIDATED. Any composite score (incl. the USS weighting in the
 ## EVIDENTIARY STATUS
 Individual mechanisms converge with studied approaches: step 3 SEPARATE with cognitive
 defusion (ACT); step 4 REDIRECT with urge surfing and thought-suppression research
-(MBRP, Marlatt); R2 with shame-vs-guilt findings; R3 with Motivational Interviewing.
+(MBRP, Marlatt); R2 with shame-vs-guilt findings; R3 with Motivational Interviewing;
+R12 with the abstinence violation effect literature (Marlatt & Gordon 1985; Curry,
+Marlatt & Gordon 1987) — noting that real-time lapse studies give MIXED support for
+self-blame as the driver, with self-efficacy collapse tracking more consistently, and
+R12 is written to that weaker, better-supported claim rather than the popular one.
 The COMPOSITE FRAMEWORK — rung sequence, pillar structure, scoring — is UNTESTED. No
 trial, no control group, no outcome data. Implementations must not claim clinical
 validation, efficacy, or equivalence to treatment. Mathematical notation appearing in
 companion documents is metaphor, not computation; nothing is calculated.
 
 ## CONFORMANCE
-An implementation conforms to PSP-1 if: (a) all hard rules R1–R11 hold in every reply,
+An implementation conforms to PSP-1 if: (a) all hard rules R1–R12 hold in every reply,
 (b) loop order is respected with regression allowed, (c) every substantive reply satisfies
 the action floor, and (d) the acute/cold seam is honored — no session pushes a user from
 REDIRECT into BUILD by default, and stopping at REDIRECT is treated and stated as complete.

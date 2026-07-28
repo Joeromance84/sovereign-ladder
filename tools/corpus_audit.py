@@ -80,8 +80,8 @@ site_states = len(re.findall(r'<div class="state">', index))
 site_steps = len(re.findall(r'data-step="\d"', index))
 if site_steps != 7:
     add("MECHANICAL", "index.html", "expected 7 ladder rungs, found %d" % site_steps)
-if site_states != 6:
-    add("MECHANICAL", "index.html", "expected 6 state-selector entries, found %d" % site_states)
+if site_states != 7:
+    add("MECHANICAL", "index.html", "expected 7 state-selector entries, found %d" % site_states)
 
 # ---- 6. crisis info in every reader-facing surface -----------------------
 for name, doc in (("index.html", index), ("terms.html", terms),
@@ -148,6 +148,8 @@ CONCEPTS = [
      "PATTERN DIRECTION"),
     ("story vs event", "what you told yourself it meant",
      "STORY (what they made it mean)", "THE STORY IS ITS OWN DATA"),
+    ("after a lapse", "I already did it. I don't know what happens now.",
+     "R12. AFTER A LAPSE", "WHAT HAPPENS AFTER YOU DO IT ANYWAY"),
 ]
 for label, site_key, psp_key, primer_key in CONCEPTS:
     on_site = site_key in index

@@ -126,6 +126,31 @@ The path out, in order — but not all in one sitting. Do not skip rungs going u
 
 ---
 
+### WHAT HAPPENS AFTER YOU DO IT ANYWAY
+
+Everything above is about the moment before. This is about the moment after — and it is the one that decides the most.
+
+**A slip and a return are not the same event.** One is a thing that happened on a Tuesday. The other is a decision about what that thing means. In the clinical literature this gap has a name — the *abstinence violation effect* — and the finding is that people who see no step between "I slipped" and "I'm back where I started" tend to make the second one true. Not because of the substance. Because of the interpretation.
+
+**This is the story-versus-event problem at its highest stakes.** The event is one drink, one scroll, one message you shouldn't have sent. The story is *this proves I can't*. Only the first one actually happened, and Rung 2 applies here exactly as it does anywhere else.
+
+**One honest complication, because the popular version is too clean.** You will hear that self-blame is what turns a lapse into a relapse. The research is more mixed than that. One study that captured over a thousand lapses in near real time found that guilt and self-blame after a first slip did not predict what came next — and that the thing which did track was a **drop in the belief that you could still do this at all.** In that data, blaming yourself was not the danger; concluding you were finished was.
+
+So the thing to protect is not your innocence. It is your sense that this remains possible.
+
+**What to do in the next ten minutes, if it just happened:**
+
+1. **Say what actually occurred, in the smallest true words.** "I drank tonight." Not "I've blown it," not "I'm back to square one." One sentence, event only, no verdict attached.
+2. **Find the situation in it.** What was the day like? What was missing — sleep, food, company, a boundary that failed? This is not an excuse; it is the difference between a cause you can do something about and a character you cannot.
+3. **Say the count out loud.** One time is one time. Whatever came before it still happened and is not deleted.
+4. **Do the next ordinary thing.** Water, sleep, a shower, a walk. The gap between the slip and the next choice is where this is decided, and small and boring beats dramatic.
+5. **Tell one person, when you can.** Not to confess. Secrecy is what turns one night into a stretch.
+
+**Then log it like any other pattern data** — trigger, feeling, urge, behaviour, story. A slip is the most informative entry you will ever make, and you only get it if you record it instead of burying it.
+
+If it has been going on for a while rather than a night, that is not a failure of this list. That is the point where another person needs to be involved.
+
+
 ### PATTERN DIRECTION — WHICH WAY DOES IT MOVE?
 
 Rung 3 says redirect the energy. That assumes there *is* energy. Sometimes there isn't, and the same instruction becomes impossible to follow.
@@ -314,6 +339,8 @@ This framework was assembled from lived experience, not from a laboratory. That 
 **The pattern log.** Self-monitoring is one of the more durable findings in behaviour change: recording a behaviour changes it, partly by making it visible.
 
 **Separating the story from the event.** Examining an interpretation against actual evidence — rather than accepting it because it arrived feeling like a fact — is the core move of cognitive restructuring, which has been tested extensively in cognitive behavioural therapy. Overgeneralising from one instance to all instances is one of the most commonly described patterns in that literature. What this framework does *not* do is diagnose: naming a pattern in your own thinking is self-observation, and it is not the same as a clinical assessment. That distinction is deliberate and it is not optional.
+
+**What happens after a lapse.** The idea that a single slip becomes a full return through interpretation rather than through the substance itself comes from Marlatt and Gordon's relapse prevention work, where it is called the abstinence violation effect. Attributing a lapse to internal, stable, global causes ("I am weak") is associated with worse outcomes than attributing it to specific, situational ones. **Be aware the picture is mixed:** at least one large study capturing lapses in near real time found that guilt and self-blame after a first slip did not predict what followed, while a drop in belief that change was still possible did. The section above is written to that narrower finding rather than to the popular version, which overstates what the evidence supports.
 
 **Repetition and automaticity.** That a repeated behaviour in a consistent context becomes automatic is well established, and it is the reason this framework asks for repeatable actions rather than one-time insights. The same research is the reason it refuses to give you a schedule: measured times to automaticity vary from under three weeks to over eight months between individuals doing the identical task. Anyone quoting you a fixed number of days is quoting a myth.
 
