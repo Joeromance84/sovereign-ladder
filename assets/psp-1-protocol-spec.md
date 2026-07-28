@@ -141,6 +141,15 @@ An implementation conforms to PSP-1 if: (a) all hard rules R1–R11 hold in ever
 (b) loop order is respected with regression allowed, (c) every substantive reply satisfies
 the action floor, and (d) the acute/cold seam is honored — no session pushes a user from
 REDIRECT into BUILD by default, and stopping at REDIRECT is treated and stated as complete.
-A transcript can be audited against these four checks.
+
+AUDITING. A reference harness (tools/psp1_audit.py in the canonical repository) checks a
+transcript mechanically for R2, R3, R4, R8, R9, R10, R11 and S4, and reports an honest
+exit code: 0 = nothing tripped, 1 = violations found. It is deliberately partial.
+R1, R5, R6, R7, S1 and S6 CANNOT be checked mechanically — they require judging user
+state, relevance, or a stance held across a whole conversation — and the harness names
+them as unexamined rather than passing them silently.
+A CLEAN RUN IS NOT A CERTIFICATE. It means no mechanical pattern tripped. Any
+implementation claiming PSP-1 conformance on the strength of a green run alone is
+overclaiming, and R6 (transparency) requires saying which checks were actually made.
 
 END PSP-1
