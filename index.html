@@ -107,6 +107,11 @@ a{color:var(--pine)}
 .safety p{margin:0 0 14px;font-size:1rem;color:var(--steel);max-width:64ch}
 .safety p.lead{font-size:1.1rem;color:var(--ink);line-height:1.6}
 .safety p:last-child{margin-bottom:0}
+.safety ul.nums{list-style:none;margin:0 0 18px;padding:0;max-width:64ch}
+.safety ul.nums li{margin:0 0 10px;font-size:1.05rem;color:var(--ink);line-height:1.5}
+.safety ul.nums li:last-child{margin-bottom:0}
+.safety ul.nums .num{font-weight:600;letter-spacing:.01em}
+.safety ul.nums .who{color:var(--steel);font-weight:400}
 .safety strong{color:var(--ink);font-weight:600}
 
 /* ── section frame ──────────────────────────────────────── */
@@ -338,11 +343,21 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
 
   <section class="safety">
     <h2>Rung 0 — safety comes first</h2>
-    <p class="lead"><strong>Before anything else: if you are not okay right now, that comes first.</strong> Nothing further down this page matters more than the next hour of your life, and none of it is going anywhere.</p>
-    <p>If you are thinking about harming yourself, reach a person tonight. In the US, call or text <strong>988</strong>. The SAMHSA helpline is <strong>1-800-662-4357</strong> — free, confidential, and open around the clock. Outside the US, <a href="https://findahelpline.com">findahelpline.com</a> lists local lines.</p>
-    <p>If you are facing physical withdrawal from alcohol, benzodiazepines, or opioids, stopping suddenly can be medically dangerous. <strong>Talk to a doctor before you stop.</strong></p>
-    <p>So you know what you are looking at: this is a self-understanding tool, not treatment. It does not diagnose, and it does not replace therapy, medical care, or detox. Take what is useful and leave the rest.</p>
-    <p><strong>The rest of this page will still be here when you are steady.</strong></p>
+    <p class="lead">There is no rush here. A few things you should have first — whether or not you need them tonight.</p>
+
+    <p>If you are thinking about harming yourself, there are people who will pick up right now.</p>
+
+    <ul class="nums">
+      <li><span class="num">988</span> <span class="who">— call or text, in the US</span></li>
+      <li><span class="num">1-800-662-4357</span> <span class="who">— SAMHSA, free, any hour</span></li>
+      <li><span class="num"><a href="https://findahelpline.com">findahelpline.com</a></span> <span class="who">— everywhere else</span></li>
+    </ul>
+
+    <p>If you are coming off alcohol, benzodiazepines, or opioids, stopping suddenly can be physically dangerous. That one is worth a doctor before anything else here.</p>
+
+    <p>And so you know what you are looking at: this is a self-understanding tool. It is not treatment, it does not diagnose, and it does not replace therapy, medical care, or detox. Take what is useful and leave the rest.</p>
+
+    <p>None of this is going anywhere. The rest of the page will still be here when you are steady.</p>
   </section>
 
   <section class="sec" id="start">
@@ -479,7 +494,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
       <h3>The Three Pillars &amp; The Ladder</h3>
       <p>The entire framework in one plain-language file: what holds a pattern in place, the seven rungs out, what to do in the next ten minutes, and an honest account of which parts have evidence behind them. Written to be pasted straight into any AI assistant so it can walk through it with you. If you only take one thing from this page, take this.</p>
       <div class="acts">
-        <a class="btn solid" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span style="opacity:.7">MD · 43 KB</span></a>
+        <a class="btn solid" href="assets/three-pillars-ai-primer.md" download>Download &darr; <span style="opacity:.7">MD · 50 KB</span></a>
         <button class="btn" id="copyPrimer2" type="button">Copy to clipboard</button>
       </div>
     </div>
@@ -506,7 +521,7 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
         <p class="kind">For builders</p>
         <h3>PSP-1 Protocol Spec</h3>
         <p>The machine-readable version. Twelve hard rules, a six-step loop, a conformance test, and a stated evidentiary status — so anyone building on this can be audited against it rather than trusted on faith.</p>
-        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 21 KB</span></a>
+        <a class="grab" href="assets/psp-1-protocol-spec.md" download>Download &darr; <span class="meta">MD · 27 KB</span></a>
       </article>
 
     </div>
