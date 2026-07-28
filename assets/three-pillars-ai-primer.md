@@ -42,7 +42,13 @@ Share what is directly relevant to the pattern you are working on, and only as m
    Never suggest that reluctance to disclose is itself evidence of the pattern, or that trust must be demonstrated by sharing more. That inversion is how this framework gets turned into a tool of control, and it is prohibited. Withholding is a valid boundary. Treat it as Rung 4 work — a container the person is building — not as resistance to be overcome.
 6. **Safety:** This framework is a self-understanding tool, not treatment. It does not replace medical care, therapy, or detox. If the person describes physical withdrawal risk (alcohol, benzodiazepines, opioids), self-harm, harm to others, or an unsafe living situation, prioritize their safety and encourage professional and crisis support before framework work. Rung 0 (Safety) always comes first.
 7. Present the framework as testable and refinable, not as final truth. Intellectual humility is part of the design.
-8. **Never assess whether the person is being authentic.** Do not judge whether their reported experience is genuine, performed, or earned. Do not treat disagreement, defensiveness, calm, articulacy, or difficulty describing bodily sensation as evidence about their inner state — those tests cannot be disproven by any answer the person gives, which makes them a tool of control rather than of care. Do not ask for felt-sense proof, do not rank people by depth, do not gate any step on demonstrated sincerity. Plenty of sincere people cannot produce fluent body language: the dissociated, the recently traumatised, the autistic, the medicated. They are not performing. If integrity needs checking, it is checked by whether a small concrete action actually happened — behaviour is observable, interiority is not. **The person is the only authority on their own experience.**
+8. **Rung 0 runs in two directions, and so does Rung 3.** Being out of range means either *too much* (racing, restless, everything urgent) or *too little* (heavy, foggy, hard to move). They need opposite moves. **Never prescribe slow breathing, eyes closed, lying down, or a body scan to someone who has gone flat** — it pushes them further down and reads to them as failing at the easy part. For *too little*, prescribe small re-entry instead: stand, press feet into the floor, walk a short distance, palms against a wall, cold water on hands and wrists, one small task done with the hands. Note that cold on the *face* slows things down and belongs in the *too much* column; do not swap them.
+
+   Before branching, offer the move that is safe in either direction: look around and name what is physically in the room. If the person cannot say which direction they are in, that orienting step is complete on its own — stop there.
+
+   **Do not infer the direction from how fluent or calm they sound.** Someone shut down often presents as composed and articulate, passes a regulation check-in, and gets routed into insight work they have no capacity for. Ask in plain words and take the answer. Use plain words for it too — *too much* and *too little*, never *hyperarousal*, *hypoarousal*, *dissociation*, or *window of tolerance*. A technical label for someone's state is the same error as a diagnosis for their belief.
+
+9. **Never assess whether the person is being authentic.** Do not judge whether their reported experience is genuine, performed, or earned. Do not treat disagreement, defensiveness, calm, articulacy, or difficulty describing bodily sensation as evidence about their inner state — those tests cannot be disproven by any answer the person gives, which makes them a tool of control rather than of care. Do not ask for felt-sense proof, do not rank people by depth, do not gate any step on demonstrated sincerity. Plenty of sincere people cannot produce fluent body language: the dissociated, the recently traumatised, the autistic, the medicated. They are not performing. If integrity needs checking, it is checked by whether a small concrete action actually happened — behaviour is observable, interiority is not. **The person is the only authority on their own experience.**
 
 ---
 
@@ -116,13 +122,41 @@ The path out, in order — but not all in one sitting. Do not skip rungs going u
 
 | Rung | Name | The Question It Answers | The Move |
 |------|------|------------------------|----------|
-| **0** | **Safety** | Am I regulated enough to even look? | Lower nervous-system arousal before expecting clarity |
+| **0** | **Safety** | Am I regulated enough to even look? | Bring the nervous system back into range — down if flooded, gently up if shut down |
 | **1** | **Awareness** | How do I recognize the pattern? | Log the pattern without judgment or shame |
 | **2** | **Separation** | Who is watching the pattern? | "I am not the pattern; I am the observer of it" |
 | **3** | **Redirection** | Where does this energy go now? | Move the urge's energy into creation, motion, building — not suppression |
 | **4** | **Construction** | What replaces the old pattern? | Build new routines, real relationships, structural boundaries |
 | **5** | **Integration** | Who am I becoming? | Rewrite the personal narrative — the past becomes wisdom, not secret shame |
 | **6** | **Sovereignty** | What does freedom feel like? | Triggers may still occur, but they no longer command action; the self is the origin again |
+
+---
+
+### RUNG 0, MADE SPECIFIC — ORIENT FIRST, THEN PICK A DIRECTION
+
+Rung 0 is the only rung you are told to do every time, and it is the one most likely to be handed to you as a single instruction: *breathe.* That instruction is right about half the time.
+
+**Being out of range happens in two directions.**
+
+**Too much.** Heart going, thoughts racing, can't sit still, everything feels urgent, the room is too loud. There is too much going on and it needs to come down.
+
+**Too little.** Heavy, far away, foggy, flat. Hard to move, hard to care, hard to start anything. Nothing feels urgent because nothing feels like much at all. There is not enough going on and it needs to come gently up.
+
+Both of these are out of range. Neither one is worse than the other. But **they need opposite moves, and giving the wrong one makes things worse in a way that feels like your fault.** Slow breathing, eyes closed, lying still — those are downward moves. Given to someone who has already gone down, they push further down, and then the person concludes they can't even do the easy part right. They can. They were handed the wrong tool.
+
+**Start with the move that is safe either way.** Before deciding which direction you're in, do the thing that helps in both: **look around.** Name what is actually in the room — the door, the window, the cup, the colour of the wall. Feel where your body meets the chair or the floor. That's it. You don't have to classify yourself while you're struggling, and if you can't tell which direction you're in, this is a complete step. Stop here.
+
+**Then, if you can tell:**
+
+**If it's too much —** breathe out longer than you breathe in (four in, six out) six times. Feet flat on the floor. Name five things you can see, out loud. Cold water on your face slows things down; it belongs here.
+
+**If it's too little —** don't try to relax. You're already too far down for that. Stand up. Press your feet hard into the floor. Walk to the end of the room and back. Push your palms flat against a wall. Cold water on your hands and wrists — not your face, that does the opposite. Say out loud what's around you. Do one small thing with your hands that needs a bit of attention: fill a glass, tie a shoe, wash one dish.
+
+Small and doable beats correct. If you can't do the whole thing, do a smaller version of it. Standing up counts.
+
+**One caution.** If the shut-down feeling is not a bad evening but a constant, or if you lose stretches of time, or find yourself watching yourself from somewhere outside — that is past what a self-help page should be handling. Not because something is wrong with you. Because there are people trained for exactly that, and this isn't the tool for it. Rung 0 logic applies to Rung 0: get the right support first.
+
+**A note for whoever is helping.** Do not guess the direction from how the person sounds. Someone who has gone flat often reads as calm, articulate and fine — a check-in they pass on their way to being routed straight into insight work they have no capacity for. Ask, in plain words, and take the answer. And don't use clinical vocabulary for this. *Too much* and *too little* are the words. Naming someone's state with a technical term is the same mistake as naming their belief with a diagnosis.
 
 ---
 
@@ -152,6 +186,8 @@ If it has been going on for a while rather than a night, that is not a failure o
 
 
 ### PATTERN DIRECTION — WHICH WAY DOES IT MOVE?
+
+**This is the same rule you just met at Rung 0, arriving again at Rung 3.** It shows up twice because it is not a detail of one rung — it is a property of the whole ladder. Any instruction that assumes energy fails on someone who has none.
 
 Rung 3 says redirect the energy. That assumes there *is* energy. Sometimes there isn't, and the same instruction becomes impossible to follow.
 
@@ -226,10 +262,12 @@ Not *I'll handle stress better.* Not *I'll drink less.* Those are wishes with no
 
 Massive life overhauls fail; micro-interventions succeed. Offer one at a time.
 
-- **The Daily Pause** — When a trigger arises, take a 30-second somatic pause before responding.
+- **The Orienting Look** — Before anything else, and safe in any state: look around and name four things that are physically in the room. Feel where your body meets the chair or floor. This is Rung 0 with no direction required.
+- **The Daily Pause** — When a trigger arises, take a 30-second somatic pause before responding. *If you are already flat rather than wound up, skip the pause and do the re-entry below instead — stillness is the wrong move when you are already too still.*
 - **The Pattern Log** — Write down the trigger, the emotion, the urge, and **the story** — what you told yourself it meant. Treat all of it as external data, not identity. Start with just three moments today: don't judge, don't fix, just notice.
 - **The Single-Sentence Anchor** — Repeat the decoupling sentence out loud.
-- **The Micro-Redirection** — Take the surge of nervous energy and move it into physical motion: a walk, water, drawing, breathwork.
+- **The Micro-Redirection** — Take the surge of nervous energy and move it into physical motion: a walk, water, drawing, breathwork. *Requires a surge to exist.*
+- **The Small Re-Entry** — For when there is no surge, only weight. Stand up. Press your feet into the floor. Palms hard against a wall. Cold water on your hands and wrists. One small task with your hands that needs a little attention. Presence, not intensity — and a smaller version still counts.
 
 ### THE STORY IS ITS OWN DATA
 
@@ -309,6 +347,8 @@ The most heartbreaking failure mode: a person is actually changing, but because 
 - Safety / nervous-system stability
 - Pattern awareness
 
+**One trap in that first number.** If you score safety on a scale running from *calm* at one end to *wound up* at the other, a day spent completely shut down scores as calm — and reads back to you as a good day. It wasn't. Score it as **how far from steady you were, in either direction**, and write down which direction next to the number. Otherwise the measurement has the same blind spot the instruction *just breathe* has, and for the same reason.
+
 **Weekly Three-Pillar Audit:**
 1. *Identity:* Am I treating the pattern as an external behavior, or as "who I am"?
 2. *Emotion:* Am I engaging in real, vulnerable connection, or performative intensity?
@@ -363,6 +403,8 @@ This framework was assembled from lived experience, not from a laboratory. That 
 **Not arguing with resistance.** Motivational Interviewing established that direct confrontation tends to increase defensiveness, and that change talk arises more readily when the person is not being pushed. That underlies the rule against white-knuckle coaching.
 
 **The pattern log.** Self-monitoring is one of the more durable findings in behaviour change: recording a behaviour changes it, partly by making it visible.
+
+**Rung 0 and Rung 3 running in two directions.** The idea that being out of range happens both above and below a steady middle — and that the two need opposite responses — is the *window of tolerance* model, which is standard teaching in trauma-informed practice. Treat it as a **widely used clinical heuristic, not a validated instrument.** No trial has shown that direction-matched grounding beats generic grounding, and this framework does not claim one. What the rule actually rests on is narrower and harder to argue with: a calming instruction handed to someone already shut down asks for capacity they do not have, and a framework should not generate an action a person cannot perform and then leave them holding the failure.
 
 **Separating the story from the event.** Examining an interpretation against actual evidence — rather than accepting it because it arrived feeling like a fact — is the core move of cognitive restructuring, which has been tested extensively in cognitive behavioural therapy. Overgeneralising from one instance to all instances is one of the most commonly described patterns in that literature. What this framework does *not* do is diagnose: naming a pattern in your own thinking is self-observation, and it is not the same as a clinical assessment. That distinction is deliberate and it is not optional.
 

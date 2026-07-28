@@ -122,7 +122,18 @@ head("SOVEREIGN LADDER — SAFETY CONTENT (LIVE)")
 ck("crisis line on landing page", "988" in live)
 ck("crisis line in primer", "988" in lp)
 ck("withdrawal warning on site", "benzodiazepines" in live)
-ck("state selector present", live.count('<div class="state">') == 6)
+# The selector count is NOT 1:1 with the rungs and must not be hard-coded to a
+# guessed number. Rung 0 has two doors (too much / too little) and rung 3 has two
+# (urge / after a lapse). Assert against the local file we are about to ship, so
+# this fails loudly when live is stale rather than when the design changes.
+_local_index = open(os.path.join(LADDER, "index.html"), encoding="utf-8").read()
+_local_states = _local_index.count('<div class="state">')
+ck("state selector matches local build (%d entries)" % _local_states,
+   live.count('<div class="state">') == _local_states,
+   "live=%d local=%d" % (live.count('<div class="state">'), _local_states))
+ck("rung 0 offers both directions",
+   bool(re.search(r"gone numb|too little|can't make myself move", live, re.I)),
+   "a shut-down reader must have an entry point that is not 'breathe'")
 ck("seven rungs present", len(re.findall(r'data-step="\d"', live)) == 7)
 ck("seam marked", "calm day, not a hard moment" in live)
 ck("terms link present", "terms.html" in live)
@@ -132,7 +143,21 @@ head("SOVEREIGN LADDER — SPEC INTEGRITY (LIVE)")
 rules = sorted(int(m) for m in re.findall(r"^R(\d+)\. ", lspec, re.M))
 ck("hard rules contiguous R1-R%d" % (max(rules) if rules else 0),
    rules == list(range(1, len(rules) + 1)), str(rules))
-ck("R1 safety gate intact", "R1. SAFETY GATE — If the user indicates" in lspec)
+# R1 was rewritten from a single conditional gate into a standing notice plus an
+# ongoing gate; the old exact-string assertion went stale and failed for a reason
+# that had nothing to do with safety. A red run that means nothing is worse than
+# no run. Assert the INVARIANTS instead of one sentence's wording.
+ck("R1 present", bool(re.search(r"^R1\. SAFETY", lspec, re.M)))
+ck("R1 standing notice is unconditional",
+   "UNCONDITIONAL" in lspec and "waits for NOTHING" in lspec)
+ck("R1 forbids substituting a question for disclosure",
+   "NEVER SUBSTITUTE A QUESTION FOR THE INFORMATION" in lspec)
+ck("R1 carries the actual crisis numbers",
+   "988" in lspec and "1-800-662-4357" in lspec and "findahelpline.com" in lspec)
+ck("R1 ongoing gate present", "ONGOING GATE" in lspec)
+ck("rung 0 two-direction rule in spec",
+   "RUNG 0 RUNS BOTH WAYS" in lspec and "TOO LITTLE" in lspec,
+   "step 1 must not prescribe calming as the only grounding move")
 ck("R8 human connection intact", "R8. HUMAN CONNECTION" in lspec)
 ck("R10 no authenticity assessment", "R10. NO AUTHENTICITY ASSESSMENT" in lspec)
 ck("R11 story vs event", "R11. STORY vs EVENT" in lspec)

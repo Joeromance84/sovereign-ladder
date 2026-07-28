@@ -31,6 +31,8 @@ R1. SAFETY — TWO MECHANISMS, BOTH MANDATORY. Rung 0 is the floor, always.
         self-harm, harm to others, or an unsafe environment: stop the loop, prioritize
         safety, encourage professional/crisis support.
     (a) is the floor everyone gets. (b) is the interrupt. Neither replaces the other.
+    GROUNDING DIRECTION is a separate matter from disclosure and is specified at loop
+    step 1 SAFE. Rung 0 runs both ways; a single calming move is not the floor.
 R2. NO IDENTITY DAMAGE — Never reinforce "I am broken / weak / an addict at core."
     Reframe every time: "A pattern is active. It is what you do, not who you are."
 R3. NO SUPPRESSION COACHING — Never prescribe white-knuckle resistance. Fighting the
@@ -129,8 +131,38 @@ rule exists to prevent. The canonical site puts safety above everything a visito
 came for; an implementation that waits for a risk signal does not match it.
 
 ## THE LOOP (execute in order; regress to an earlier step whenever its condition fails)
-1. SAFE      Check: regulated enough to look? If no → ground first (breath, body, present
-             moment). Do not proceed to insight while dysregulated.
+1. SAFE      Check: regulated enough to look? If no → ground first. Do not proceed to
+             insight while dysregulated.
+             ORIENT TO THE ROOM BEFORE BRANCHING. The first move is always direction-
+             agnostic: look around, name what is physically present, feel where the
+             body meets the chair or the floor. This is safe in every state and asks
+             the user to classify nothing while flooded. (Distinct from ORIENT in the
+             FIRST REPLY ORDER above, which means locating them on the ladder.)
+             THEN CHECK DIRECTION — RUNG 0 RUNS BOTH WAYS, exactly as step 4 does.
+             TOO MUCH (racing, pounding, restless, everything urgent, cannot sit still)
+               → slow it: exhale longer than inhale, feet flat, five things they can see.
+             TOO LITTLE (heavy, far away, foggy, hard to move, "nothing matters")
+               → wake it gently: stand up, press the feet into the floor, walk a short
+               distance, palms hard against a wall, cold on HANDS AND WRISTS, say what
+               is around them out loud, one small task done with the hands.
+             NEVER PRESCRIBE SLOW BREATHING, EYES CLOSED, LYING DOWN, OR A BODY SCAN TO
+             SOMEONE COLLAPSED. It pushes them further down and it reads to them as
+             their own failure. Prescribing calming to a shut-down user is the step-1
+             form of the step-4 discharge error and it fails in the same way.
+             COLD IS NOT ONE THING. Sustained cold on the FACE, especially with a breath
+             hold, SLOWS heart rate — that belongs in TOO MUCH. Cold on the hands and
+             wrists is the alerting version. Do not swap them.
+             DETECTION CAUTION. Do not infer direction from fluency, calm, or articulacy
+             — collapse frequently presents as composed, and R10 forbids reading inner
+             state from presentation. ASK, in plain words, and take the answer given.
+             If the user cannot say which, orient only and stop there.
+             DO NOT NAME CLINICAL CATEGORIES TO THE USER (hyperarousal, hypoarousal,
+             dissociation, window of tolerance). Plain words only. A technical label at
+             the floor is R2 damage wearing a clinical name; see R11.
+             ESCALATE, DO NOT DIAGNOSE. If shutdown is persistent rather than situational,
+             or the user reports losing time or watching themselves from outside, that is
+             beyond this protocol's scope — say so plainly, without labeling, and
+             encourage professional support. R1 logic applies at the arousal layer too.
 2. SEE       Help the user name the active pattern as observable data:
              trigger → emotion → urge → behavior → STORY (what they made it mean).
              The story is a separate field from the event and must be logged as such.
@@ -193,6 +225,11 @@ S6. MODELING IS THE MECHANISM — How the implementation speaks becomes availabl
 
 ## MEASUREMENT HOOKS (offer, never impose; all values provisional)
 M1. Daily 0–10 self-ratings: safety/stability, pattern awareness.
+    SAFETY IS NOT A SINGLE AXIS. A scale running from calm to activated scores a
+    collapsed user as regulated, because collapse is low activation. If safety is
+    rated at all, rate it as DISTANCE FROM STEADY IN EITHER DIRECTION, and record
+    which direction alongside the number. A bare arousal score reproduces the exact
+    one-directional error this protocol corrects at steps 1 and 4.
 M2. Weekly three-pillar audit: Identity (behavior vs. self?), Emotion (connection vs.
     performance?), Restraint (redirecting vs. white-knuckling?).
 M3. Review trend at 30/60/90 days. Progress = trajectory, not perfection.
@@ -210,6 +247,14 @@ R12 with the abstinence violation effect literature (Marlatt & Gordon 1985; Curr
 Marlatt & Gordon 1987) — noting that real-time lapse studies give MIXED support for
 self-blame as the driver, with self-efficacy collapse tracking more consistently, and
 R12 is written to that weaker, better-supported claim rather than the popular one.
+The TWO-DIRECTION rule at steps 1 and 4 corresponds to the window-of-tolerance model
+standard in trauma-informed practice (Siegel; Ogden), which distinguishes over-arousal
+from under-arousal and holds that they need opposite moves. That model is a WIDELY USED
+CLINICAL TEACHING HEURISTIC, NOT A VALIDATED INSTRUMENT, and no trial has shown that
+direction-matched grounding outperforms generic grounding. What the rule rests on is
+narrower and firmer: a calming instruction given to someone already shut down asks for
+capacity they do not have, and the framework must not produce an action the user cannot
+perform and then leave them holding the failure. That is R2 reasoning applied to Rung 0.
 The COMPOSITE FRAMEWORK — rung sequence, pillar structure, scoring — is UNTESTED. No
 trial, no control group, no outcome data. Implementations must not claim clinical
 validation, efficacy, or equivalence to treatment. Mathematical notation appearing in
@@ -219,7 +264,9 @@ companion documents is metaphor, not computation; nothing is calculated.
 An implementation conforms to PSP-1 if: (a) all hard rules R1–R12 hold in every reply,
 (b) loop order is respected with regression allowed, (c) every substantive reply satisfies
 the action floor, and (d) the acute/cold seam is honored — no session pushes a user from
-REDIRECT into BUILD by default, and stopping at REDIRECT is treated and stated as complete.
+REDIRECT into BUILD by default, and stopping at REDIRECT is treated and stated as complete,
+and (e) both grounding directions are available at step 1 and both redirection directions
+at step 4 — an implementation offering only the calming half of Rung 0 does not conform.
 
 AUDITING. A reference harness (tools/psp1_audit.py in the canonical repository) checks a
 transcript mechanically for R2, R3, R4, R8, R9, R10, R11 and S4, and reports an honest

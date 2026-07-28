@@ -80,8 +80,11 @@ site_states = len(re.findall(r'<div class="state">', index))
 site_steps = len(re.findall(r'data-step="\d"', index))
 if site_steps != 7:
     add("MECHANICAL", "index.html", "expected 7 ladder rungs, found %d" % site_steps)
-if site_states != 7:
-    add("MECHANICAL", "index.html", "expected 7 state-selector entries, found %d" % site_states)
+# 8 state-selector entries, not 7: rung 0 has two doors (0a too much / 0b too
+# little) and rung 3 has two (03 urge / 3b after a lapse). The rail is the ladder;
+# the selector is the entry points, and they are deliberately not 1:1.
+if site_states != 8:
+    add("MECHANICAL", "index.html", "expected 8 state-selector entries, found %d" % site_states)
 
 # ---- 6. crisis info in every reader-facing surface -----------------------
 for name, doc in (("index.html", index), ("terms.html", terms),
@@ -161,6 +164,69 @@ for label, site_key, psp_key, primer_key in CONCEPTS:
         add("MECHANICAL", "corpus",
             "concept drift: '%s' is on the site but missing from documents" % label,
             "site=%s psp-1=%s primer=%s" % (on_site, in_psp, in_primer))
+
+# ---- 11b. the site's rule count must match the spec ---------------------
+# The site described "Eight hard rules" for four rules after R8 was added.
+# Prose counts drift silently; the spec is the source of truth.
+WORDNUM = {"four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9,
+           "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14}
+cm = re.search(r"\b([A-Za-z]+|\d+) hard rules", index)
+if cm:
+    tok = cm.group(1).lower()
+    stated = WORDNUM.get(tok, int(tok) if tok.isdigit() else None)
+    if stated is None:
+        add("JUDGMENT", "index.html", "unparseable rule count on site", cm.group(0))
+    elif stated != max(rules):
+        add("MECHANICAL", "index.html",
+            "site states %d hard rules, spec defines %d" % (stated, max(rules)))
+
+# ---- 12. two-direction rule: any surface teaching a regulation move -----
+#          must teach BOTH directions, not just the calming one.
+#
+# This exists because the corpus shipped with the two-way move promised in the
+# rung-0 table cell and taught nowhere: step 1 SAFE said "ground first (breath,
+# body)", the bridge table said "4-7-8 breathing", and the site's only rung-0
+# door was "everything is too loud". Rung 3 had the direction check; rung 0 did
+# not. Prescribing calming to someone already collapsed pushes them further down
+# and reads to them as their own failure.
+#
+# LIMIT: this is a keyword check. It proves the words are present, not that the
+# guidance is correct or that the two doors are equally reachable. A green run
+# here means the down-move is no longer the only move on that surface. Nothing more.
+DOWN_MOVES = ("breath", "breathe", "slow down", "calm", "relax")
+UP_MARKERS = ("too little", "shut down", "shutdown", "numb", "gone flat",
+              "gently up", "re-entry", "hands and wrists", "stand up")
+
+for name, doc in (("psp-1", psp), ("primer", primer), ("index.html", index)):
+    low = doc.lower()
+    teaches_down = any(t in low for t in DOWN_MOVES)
+    teaches_up = any(t in low for t in UP_MARKERS)
+    if teaches_down and not teaches_up:
+        add("MECHANICAL", name,
+            "one-directional rung 0: teaches a calming move with no shut-down path",
+            "a person already collapsed gets an instruction that pushes them down")
+
+# The face/wrists distinction is easy to get backwards, and getting it backwards
+# inverts the effect: sustained cold on the FACE slows heart rate (a DOWN move),
+# while cold on hands and wrists is the alerting one. Flag only the INVERSION -
+# cold-on-face appearing inside a passage about waking someone up - rather than
+# every mention, which produced a finding that always fired and taught nothing.
+UP_CONTEXT = r"numb|shut ?down|gone flat|too little|re-entry|wake it|stand up"
+for name, doc in (("primer", primer), ("index.html", index)):
+    for m in re.finditer(r"cold\b[^.!?<]{0,40}\bface", doc, re.I):
+        window = doc[max(0, m.start() - 500):m.end() + 200]
+        if re.search(UP_CONTEXT, window, re.I) and not re.search(
+                r"not your face|slows|opposite|belongs here|too much", window, re.I):
+            add("JUDGMENT", name,
+                "cold-on-face appears in a wake-up passage - direction may be inverted",
+                "cold on the FACE slows heart rate (down move); "
+                "hands and wrists is the alerting one")
+
+# clinical vocabulary must not reach reader-facing surfaces (R2 / R11 logic)
+for name, doc in (("index.html", index), ("terms.html", terms)):
+    for term in ("hyperarousal", "hypoarousal", "window of tolerance"):
+        if term in doc.lower():
+            add("JUDGMENT", name, "clinical label on a reader-facing surface", term)
 
 # ---- 11. no commercial content in the free resource ---------------------
 for term in ("nourish", "derma", "moistur", "buy now", "purchase"):
