@@ -97,16 +97,17 @@ a{color:var(--pine)}
 
 /* ── safety notice ──────────────────────────────────────── */
 .safety{
-  border:1px solid var(--rule);border-left:3px solid var(--brass);
-  padding:26px 30px;margin:0 0 12vh;background:var(--paper-deep);
+  border:1px solid var(--rule);border-left:4px solid var(--brass);
+  padding:34px 38px;margin:0 0 12vh;background:var(--paper-deep);
 }
 .safety h2{
-  font-family:var(--mono);font-size:11px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--brass);margin:0 0 12px;font-weight:500;
+  font-family:var(--serif);font-weight:400;font-size:1.72rem;
+  letter-spacing:-.01em;color:var(--ink);margin:0 0 16px;
 }
-.safety p{margin:0 0 10px;font-size:.95rem;color:var(--steel);max-width:64ch}
+.safety p{margin:0 0 14px;font-size:1rem;color:var(--steel);max-width:64ch}
+.safety p.lead{font-size:1.1rem;color:var(--ink);line-height:1.6}
 .safety p:last-child{margin-bottom:0}
-.safety strong{color:var(--ink);font-weight:500}
+.safety strong{color:var(--ink);font-weight:600}
 
 /* ── section frame ──────────────────────────────────────── */
 .sec{padding:0 0 12vh}
@@ -300,6 +301,9 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
   .seamrow{padding:10px 16px;font-size:9px;letter-spacing:.1em}
   .statehead{font-size:.95rem;margin-bottom:16px}
   .sec{padding:0 0 9vh}
+  .safety{padding:24px 22px;border-left-width:3px}
+  .safety h2{font-size:1.4rem}
+  .safety p.lead{font-size:1.02rem}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
@@ -333,10 +337,12 @@ footer .mono{font-family:var(--mono);font-size:11px;letter-spacing:.06em}
   </header>
 
   <section class="safety">
-    <h2>Read this first</h2>
-    <p>This is a <strong>self-understanding tool, not treatment.</strong> It does not diagnose, and it does not replace therapy, medical care, or detox.</p>
-    <p>If you are facing physical withdrawal from alcohol, benzodiazepines, or opioids, that can be medically dangerous — <strong>talk to a doctor before stopping.</strong> If you are thinking about harming yourself, please reach a person tonight: in the US call or text <strong>988</strong>; the SAMHSA helpline is <strong>1-800-662-4357</strong>, free and open around the clock. Outside the US, <a href="https://findahelpline.com">findahelpline.com</a> lists local lines.</p>
-    <p>Rung 0 is safety. It always comes first.</p>
+    <h2>Rung 0 — safety comes first</h2>
+    <p class="lead"><strong>Before anything else: if you are not okay right now, that comes first.</strong> Nothing further down this page matters more than the next hour of your life, and none of it is going anywhere.</p>
+    <p>If you are thinking about harming yourself, reach a person tonight. In the US, call or text <strong>988</strong>. The SAMHSA helpline is <strong>1-800-662-4357</strong> — free, confidential, and open around the clock. Outside the US, <a href="https://findahelpline.com">findahelpline.com</a> lists local lines.</p>
+    <p>If you are facing physical withdrawal from alcohol, benzodiazepines, or opioids, stopping suddenly can be medically dangerous. <strong>Talk to a doctor before you stop.</strong></p>
+    <p>So you know what you are looking at: this is a self-understanding tool, not treatment. It does not diagnose, and it does not replace therapy, medical care, or detox. Take what is useful and leave the rest.</p>
+    <p><strong>The rest of this page will still be here when you are steady.</strong></p>
   </section>
 
   <section class="sec" id="start">
