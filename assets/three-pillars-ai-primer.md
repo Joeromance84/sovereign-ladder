@@ -126,6 +126,21 @@ The path out, in order — but not all in one sitting. Do not skip rungs going u
 
 ---
 
+### PATTERN DIRECTION — WHICH WAY DOES IT MOVE?
+
+Rung 3 says redirect the energy. That assumes there *is* energy. Sometimes there isn't, and the same instruction becomes impossible to follow.
+
+Patterns move in one of two directions, and they need opposite moves.
+
+**Outward.** Chasing, restlessness, reaching for more of the thing, unable to sit still. There is a surge, and it is looking for somewhere to go. **The move is discharge** — motion, water, breath, something physical. This is Rung 3 as written.
+
+**Inward.** Going numb, going quiet, disappearing into it until the day is gone. There is no surge to redirect; the system has gone down rather than up. **Do not try to out-discharge a shutdown.** It does not need more energy spent — it needs a small re-entry. Name three things you can physically feel right now. Do one small task with your hands that requires attention: dishes, a shoelace, anything real. Presence, not intensity. Small and finishable beats big and correct.
+
+Neither direction is worse than the other, and the same person can be in one today and the other tomorrow. Noticing which one you are in *is* the whole step — it only tells you which door to use.
+
+**A note for whoever is helping.** Prescribing discharge to someone who has collapsed inward is the most common way this rung fails, and it fails in a way that feels like the person's fault. If somebody reports that redirection "didn't work" or that they could not make themselves do it, check direction before checking effort.
+
+
 ### THE SEAM — READ THIS BEFORE YOU CLIMB PAST RUNG 3
 
 **The ladder is two different kinds of work, and there is a seam between rung 3 and rung 4.**

@@ -141,6 +141,23 @@ if not (story_psp and story_primer and story_site):
     add("JUDGMENT", "corpus", "story field documented inconsistently",
         "psp=%s primer=%s site=%s" % (story_psp, story_primer, story_site))
 
+# ---- 10b. concept drift: anything on the site must exist in the documents --
+CONCEPTS = [
+    ("seam / acute vs cold", 'class="seam"', "SEAM", "THE SEAM"),
+    ("pattern direction", "id=\"pattern-direction\"", "CHECK DIRECTION FIRST",
+     "PATTERN DIRECTION"),
+    ("story vs event", "what you told yourself it meant",
+     "STORY (what they made it mean)", "THE STORY IS ITS OWN DATA"),
+]
+for label, site_key, psp_key, primer_key in CONCEPTS:
+    on_site = site_key in index
+    in_psp = psp_key in psp
+    in_primer = primer_key in primer
+    if on_site and not (in_psp and in_primer):
+        add("MECHANICAL", "corpus",
+            "concept drift: '%s' is on the site but missing from documents" % label,
+            "site=%s psp-1=%s primer=%s" % (on_site, in_psp, in_primer))
+
 # ---- 11. no commercial content in the free resource ---------------------
 for term in ("nourish", "derma", "moistur", "buy now", "purchase"):
     if term in index.lower():

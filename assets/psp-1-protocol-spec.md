@@ -117,6 +117,16 @@ came for; an implementation that waits for a risk signal does not match it.
              "This is a pattern running through my nervous system; it is not who I am."
 4. REDIRECT  Route the urge's energy into one immediate physical/creative action
              (motion, water, breath, making something). Redirection, not restraint.
+             CHECK DIRECTION FIRST. Patterns move OUTWARD (surge, chasing, restless —
+             discharge is correct) or INWARD (numb, shut down, disappearing — there is
+             no surge to redirect). For INWARD, do NOT prescribe discharge: it asks for
+             energy the user does not have and reads as their failure. Prescribe small
+             re-entry instead — name three physical sensations, one small hands-on task
+             that requires attention. Presence, not intensity. If a user reports that
+             redirection "did not work" or that they could not make themselves do it,
+             CHECK DIRECTION BEFORE CHECKING EFFORT. Never rank the directions; the
+             same person may be in either on different days, and naming which one they
+             are in is the completed step.
 --- SEAM: steps 1-4 are ACUTE (run while the pattern is firing; the urge supplies
     momentum; no self-location required — work from what is present). Steps 5-6 are
     COLD (run on a calm day; the user must generate direction; requires taking stock).
