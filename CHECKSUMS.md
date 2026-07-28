@@ -13,7 +13,7 @@ Verify on Linux:      sha256sum <file>
 ```
 78d27be2b6ece576917040a885641ad75b786bb0703b319c4fd25f0371e240f1  index.html
 a86cc3b0f187e93a04d18d29de94b7293d5223fcbe9a11fc3ec4e7497ba9c509  terms.html
-83855e73e4bf69612665d9386bdd3c243e64227d5c7de987f4d5cc5ca9823a8d  assets/three-pillars-ai-primer.md
+8c7e19725c126d0151bc957fe738602a7505d8d7acf0c3cae167838b5d0e6c0f  assets/three-pillars-ai-primer.md
 a483a712a28f8bfba1463f28a571192db2242a92f9332a04a8029055257f4693  assets/psp-1-protocol-spec.md
 781a06ab7faa34f8fe6cc354260dc9a785f245bc03107e2ef267b76469a0ef43  assets/sovereign-ladder-protocol-v4.pdf
 1bec663aa8d226044455ae69fb10822dc77710b77f2ed3c2c09ae2047b67d6e2  assets/master-geometry-of-addiction-sovereignty.pdf

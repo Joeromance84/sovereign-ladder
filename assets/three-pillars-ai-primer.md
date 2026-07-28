@@ -11,6 +11,8 @@ Attach or paste this document at the start of a conversation with any AI assista
 
 ### BEFORE YOU BEGIN — for the person using this
 
+**If you need help tonight, get it before you read any further.** This is a self-understanding tool, not treatment, and it does not replace medical care, therapy, or detox. Physical withdrawal from alcohol, benzodiazepines or opioids can be dangerous — talk to a doctor before stopping. If you are thinking about harming yourself, reach a person now: in the US call or text **988**, or the SAMHSA helpline on **1-800-662-4357**, free and open around the clock. Outside the US, **findahelpline.com** lists local lines. Rung 0 is safety, and it comes before everything else here.
+
 **Where your words go.** This file is only text, and it is safe. The assistant you paste it into is a different matter. Conversations with ChatGPT, Claude, Gemini and the rest are stored on those companies' servers, may be read by people, may be used to train future systems, and can be subpoenaed. Use a temporary or incognito chat if the service offers one, and turn training off in the settings if you can.
 
 **How much to share.** Less than you would think. This works on what is happening *now* — the trigger, the feeling, the urge, what you did next. When it reaches backward, it is looking for a category, not a story: was what was missing safety, mirroring, co-regulation, a container? Four words will do.
