@@ -59,8 +59,26 @@ ck("corpus integrity audit", rc == 0,
 
 rc, out = run([sys.executable, "-X", "utf8", r"tools\psp1_audit.py",
                r"tools\samples\transcript_urge.txt"], LADDER)
-ck("conformance harness self-test (must find 2)", rc == 1 and "VIOLATIONS: 2" in out,
-   "harness detects known violations")
+ck("conformance harness self-test — urge transcript", rc == 1 and "VIOLATIONS: 5" in out,
+   "detects known R8/S4/R1a violations")
+
+rc, out = run([sys.executable, "-X", "utf8", r"tools\psp1_audit.py",
+               r"tools\samples\transcript_vague_opener.txt"], LADDER)
+ck("conformance harness self-test — vague opener", rc == 1 and "VIOLATIONS: 3" in out,
+   "detects safety question substituted for safety information")
+
+# R1(a) must be unconditional in BOTH AI-facing documents
+spec_local = open(os.path.join(LADDER, "assets", "psp-1-protocol-spec.md"),
+                  encoding="utf-8").read()
+prim_local = open(os.path.join(LADDER, "assets", "three-pillars-ai-primer.md"),
+                  encoding="utf-8").read()
+ck("PSP-1 standing notice is unconditional", "UNCONDITIONAL, NO TRIGGER" in spec_local)
+ck("PSP-1 forbids question-for-information", "NEVER SUBSTITUTE A QUESTION" in spec_local)
+ck("PSP-1 defines first reply order", "FIRST REPLY ORDER" in spec_local)
+ck("primer carries unconditional disclosure",
+   "Every time. No exceptions." in prim_local)
+ck("primer forbids question-for-information",
+   "Do not substitute a question for it" in prim_local)
 
 head("SOVEREIGN LADDER — CHECKSUM MANIFEST")
 manifest = open(os.path.join(LADDER, "CHECKSUMS.md"), encoding="utf-8").read()

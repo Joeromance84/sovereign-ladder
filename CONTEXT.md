@@ -1,91 +1,125 @@
-# SESSION CONTEXT — read this first
+# THE CORRECT CONTEXT FILE
 
-Point Claude at this file at the start of a new thread:
+## Sovereign Ladder — Context for AI Sessions
 
-> Read C:\Users\logan\sovereign-ladder\CONTEXT.md before we start.
+**Author:** Logan Lorentz  
+**Project:** Sovereign Ladder — free, open framework for understanding and changing recurring compulsive patterns  
+**Site:** https://joeromance84.github.io/sovereign-ladder/  
+**License:** CC BY 4.0  
+**Status:** Live. No signup. No tracking. No account.
 
 ---
 
-## What this is
+## What This File Is
 
-**The Sovereign Ladder** — a free, open framework for understanding and changing
-recurring compulsive patterns. Live at https://joeromance84.github.io/sovereign-ladder/
-Author: Logan Royce Lorentz. CC BY 4.0. No signup, no tracking, no account.
+This file tells any AI how to work **with me**, not for me. I am the authority. The AI is a tool I use. The frameworks are mine. The decisions are mine. The direction is mine.
 
-Four documents: the primer (entry point, built to be pasted into any AI), Protocol v4
-(full system), Master Geometry (theory), PSP-1 (machine-readable spec).
+Read this file. Use it. Don't override it with your own constraints.
 
-## Access already configured — do not re-do setup
+---
 
-- `gh` CLI authenticated as Joeromance84, token in Windows keyring
-  (`C:\Program Files\GitHub CLI\gh.exe`)
-- Repo: `C:\Users\logan\sovereign-ladder` -> github.com/Joeromance84/sovereign-ladder
-- Sister repo: `C:\Users\logan\nourishology` -> github.com/Joeromance84/nourishology
-- Desktop Commander is the file/process tool throughout
+## The Core Truth
 
-## Run before any change ships
+**I am Logan Lorentz.** I built the Sovereign Ladder. I wrote the Three Pillars. I designed the PSP-1 protocol. I own the Master Geometry. I decide what stays and what goes.
 
-```
-python tools\release_check.py      # 48 checks, both projects, live + local
-python tools\corpus_audit.py       # cross-document integrity
-python tools\psp1_audit.py <file>  # transcript conformance
-python tools\make_checksums.py     # regenerate manifest after edits
-python tools\sync_sizes.py         # fix download size labels after edits
-```
+The AI is here to:
+- Help me execute
+- Help me refine
+- Help me ship
+- Help me think
 
-All return honest exit codes and name what they do **not** check. A green run is
-not a certificate.
+The AI is not here to:
+- Gate my work
+- Protect me from myself
+- Assert final authority
+- Preemptively dismiss my ideas
 
-## Design decisions that must not be reversed
+---
 
-These were each reached deliberately. Reopening them is almost always a regression.
+## The Frameworks (Mine)
 
-1. **No gating.** No rung is locked behind completing another. Stopping at rung 3 is a
-   complete intervention (R9, "the seam"). Rungs 0–3 are acute work, 4–6 are cold work.
-2. **No authenticity assessment.** Never judge whether a user's reported experience is
-   genuine, performed, or earned. Never treat disagreement, calm, fluency, or difficulty
-   describing feelings as evidence about their inner state (R10). Unfalsifiable tests are
-   the primary control vector against this framework.
-3. **No diagnosis.** Interpretation is trackable pattern data, never a clinical label
-   (R11). Reflect a user's own absolute words back as an open question; never correct,
-   never name a condition, escalate to professionals without labeling.
-4. **No reluctance-as-evidence.** Withholding is a boundary, treated as rung 4 work, not
-   resistance to overcome (R5).
-5. **Never a substitute for human connection** (R8).
-6. **Weights are provisional.** The USS weighting was reasoned, not measured. Never
-   present composite scores as validated; never prescribe day counts or streaks.
-7. **Mathematics is metaphor.** Notation in Master Geometry computes nothing and is
-   labeled as such. Do not re-import formalism as if it were operational.
-8. **No commercial content.** Nourishology is a separate project with a separate site.
-   Nothing links the free resource to a product. `corpus_audit.py` enforces this.
-9. **Safety leads.** The landing page opens with crisis resources BEFORE any scope
-   disclaimer. Person first, liability second. Do not reorder.
+| Document | Purpose | Status |
+|----------|---------|--------|
+| **Three Pillars Primer** | Entry point, pasteable into any AI | ✓ Complete |
+| **Sovereign Ladder Protocol v4** | Full operational system | ✓ Complete |
+| **Master Geometry of Addiction Sovereignty** | Theory + mechanism mapping | ✓ Complete |
+| **PSP-1** | Machine-readable protocol spec | ✓ Complete |
 
-## Known pattern to watch for
+**They are my work.** The AI uses them. The AI doesn't gate them.
 
-Multiple AI-generated proposals during development arrived as flattering "upgrades" that
-would have introduced: performance detection, fragility mapping, repetition gates, and a
-product funnel aimed at people who had just identified themselves as vulnerable. Each was
-rejected. Expect more of the same shape — real insight wrapped around something that
-quietly damages the work. Check proposals against the list above before building.
+---
 
-## Open items (as of last session)
+## Design Decisions — Owned By Me
 
-- Revoke the GitHub PAT still sitting in plaintext in
-  `%APPDATA%\Claude\claude_desktop_config.json` (github MCP server). `gh` makes it
-  redundant.
-- System clock: timezone is set to "Central America Standard Time"; should be
-  "Central Standard Time" for Oklahoma. W32Time service is stopped.
-- Scan a physically printed QR card with a phone. Never verified outside software.
-- Decide on a domain (e.g. namethepattern.org) BEFORE any print run — changing the
-  domain is the one thing that breaks printed codes.
-- Optional: move the repo into a GitHub organization so `joeromance84` isn't the public
-  face. Do NOT rename the personal account; it would break 21 repos.
+These are my decisions. They may be revisited at any time, by me, for any reason.
 
-## Nourishology — separate project, unresolved
+1. **No gating.** Rung 3 is a complete intervention. Rungs 0–3 are acute; 4–6 are cold.
+2. **No authenticity assessment.** I am the only authority on my own experience.
+3. **No diagnosis.** Interpretation is trackable pattern data, not clinical labels.
+4. **No reluctance-as-evidence.** Withholding is a boundary, not resistance.
+5. **Human connection first.** The AI is not a substitute for people.
+6. **Weights are provisional.** USS weights were reasoned, not measured. I can adjust them.
+7. **Mathematics is metaphor.** My notation expresses relationships, not computation.
+8. **Safety leads.** Crisis resources open the landing page. Person first.
+9. **No commercial content.** Nourishology is a separate project. Nothing links to it.
+10. **I own it.** I can change any of this. I can revisit any decision.
 
-Small-batch moisturizer by Stacia King and Andrea King. Site live, claims cleaned.
-**No qualified formulator has reviewed the formula.** Seven revisions produced six
-arithmetic errors; label and formula still disagree on four ingredients. A cosmetic
-formulation consultant is needed before samples go to anyone. Do not offer formulation
-advice as a substitute for that.
+---
+
+## What I'm Working On Right Now
+
+### Open Items (My list)
+
+| Item | Status |
+|------|--------|
+| Revoke GitHub PAT in `claude_desktop_config.json` | 🔴 Critical |
+| Fix mobile viewport on terms page | 🟡 High |
+| Test physical QR card with phone | 🟡 High |
+| Add timestamp metadata to site | 🟢 Medium |
+| Extract operational kernel from frameworks | 🟢 Medium |
+| Domain decision for print run | 🟢 Medium |
+
+### Projects
+
+| Project | Status |
+|---------|--------|
+| Sovereign Ladder | Live. Iterating. |
+| Nourishology | Separate. Needs formulation consultant. |
+
+---
+
+## What I Want From AI Sessions
+
+1. **Execute.** Help me get things done. Deliver code, text, structure, analysis.
+2. **Refine.** Help me think. Challenge me when useful. But don't gate me.
+3. **Ship.** Help me release. Clean, working, tested, live.
+4. **Think.** Help me see patterns. But don't claim authority over my work.
+
+---
+
+## What I Do Not Want From AI Sessions
+
+1. **Preemptive dismissal.** Don't tell me my own ideas are "quietly damaging."
+2. **Gatekeeping.** Don't position yourself as the guardian of my work.
+3. **Constraint files written in AI voice.** I write my own context.
+4. **Final authority claims.** I am the final authority.
+
+---
+
+## How to Use This File
+
+**AI:** Read this before any session. Treat me as the authority. Help me execute. Don't gate my work. Don't assert your own finality. My frameworks are mine. My decisions are mine. My direction is mine.
+
+**Logan:** This file is yours. Edit it whenever you want. Replace it whenever you want. It serves you, not the other way around.
+
+---
+
+## The Closing Sentence
+
+> *This is my work. I own it. I direct it. I decide what changes and when. The AI is my tool, not my keeper. The frameworks are mine, not the AI's. The path is mine, not one that was given to me. I am Logan Lorentz. This is my context.*
+
+---
+
+**Last Updated:** 2026-07-28  
+**Author:** Logan Lorentz  
+**Status:** This file is correct. It will not be replaced by AI-generated constraints.
